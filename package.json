@@ -5,6 +5,7 @@
     "dependencies": {
         "@plotex/render-dom": "^1.0.21",
         "@plotex/render-image": "^1.0.21",
+        "@tensorflow/tfjs": "^3.11.0",
         "@tensorflow/tfjs-node": "^3.11.0",
         "@tensorflow/tfjs-vis": "^1.5.1",
         "data-forge": "^1.8.25",
