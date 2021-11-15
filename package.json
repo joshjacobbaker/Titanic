@@ -1,15 +1,15 @@
 {
-    "name": "titanic",
-    "version": "1.0.0",
-    "description": "Data-Forge Notebook - A JavaScript notebook",
-    "dependencies": {
-        "@plotex/render-dom": "^1.0.21",
-        "@plotex/render-image": "^1.0.21",
-        "@tensorflow/tfjs": "^3.11.0",
-        "@tensorflow/tfjs-node": "^3.11.0",
-        "@tensorflow/tfjs-vis": "^1.5.1",
-        "data-forge": "^1.8.25",
-        "data-forge-fs": "0.0.9",
-        "data-forge-plot": "^1.0.2"
-    }
+  "name": "titanic",
+  "version": "1.0.0",
+  "description": "Data-Forge Notebook - A JavaScript notebook",
+  "dependencies": {
+    "@plotex/render-dom": "^1.0.21",
+    "@plotex/render-image": "^1.0.21",
+    "@tensorflow/tfjs": "^3.11.0",
+    "@tensorflow/tfjs-node": "^3.11.0",
+    "@tensorflow/tfjs-vis": "^1.5.1",
+    "data-forge": "^1.8.25",
+    "data-forge-fs": "0.0.9",
+    "data-forge-plot": "^1.0.2"
+  }
 }

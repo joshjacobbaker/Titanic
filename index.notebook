@@ -49,32 +49,28 @@
                 "id": "1e9fa181-3dd1-11ec-a86c-e5564a47a063",
                 "cellType": "code",
                 "cellScope": "global",
-                "code": "// Import data-forge, data-forge-fs\nconst dataForge = require('data-forge'); require('data-forge-fs'); require('data-forge-plot');\n\n// Load the binding\nconst tf = require('@tensorflow/tfjs-node'); require(\"@tensorflow/tfjs-vis\")",
-                "lastEvaluationDate": "2021-11-14T11:07:11.067-08:00",
+                "code": "// Import data-forge, data-forge-fs\nconst dataForge = require('data-forge'); require('data-forge-fs'); require('data-forge-plot');\n\n// Load the binding\nconst tf = require(\"@tensorflow/tfjs\"); require('@tensorflow/tfjs-node');\n// const tfvis = require(\"@tensorflow/tfjs-vis\");",
+                "lastEvaluationDate": "2021-11-14T18:31:57.960-08:00",
                 "output": [],
-                "errors": [
-                    {
-                        "msg": "Cannot use import statement outside a module"
-                    }
-                ],
-                "height": 203
+                "errors": [],
+                "height": 222
             },
             {
                 "id": "30b8b220-457a-11ec-899d-efbc6f7a6af7",
                 "cellType": "code",
                 "cellScope": "global",
                 "code": "console.log(tf)",
-                "lastEvaluationDate": "2021-11-14T10:44:30.548-08:00",
+                "lastEvaluationDate": "2021-11-14T18:31:58.895-08:00",
                 "output": [
                     {
                         "value": {
                             "displayType": "string",
-                            "data": "<ref *2> {\n  version: {\n    'tfjs-core': '3.11.0',\n    'tfjs-backend-cpu': '3.11.0',\n    'tfjs-backend-webgl': '3.11.0',\n    'tfjs-data': '3.11.0',\n    'tfjs-layers': '3.11.0',\n    'tfjs-converter': '3.11.0',\n    tfjs: '3.11.0',\n    'tfjs-node': '3.11.0'\n  },\n  io: {\n    browserFiles: [Function: browserFiles],\n    browserHTTPRequest: [Function: browserHTTPRequest],\n    concatenateArrayBuffers: [Function: concatenateArrayBuffers],\n    decodeWeights: [Function: decodeWeights],\n    encodeWeights: [Function: encodeWeights],\n    fromMemory: [Function: fromMemory],\n    getLoadHandlers: [Function: getLoadHandlers],\n    getModelArtifactsForJSON: [Function: getModelArtifactsForJSON],\n    getModelArtifactsInfoForJSON: [Function: getModelArtifactsInfoForJSON],\n    getSaveHandlers: [Function: getSaveHandlers],\n    http: [Function: http],\n    isHTTPScheme: [Function: isHTTPScheme],\n    loadWeights: [Function: loadWeights],\n    registerLoadRouter: [Function: registerLoadRouter],\n    registerSaveRouter: [Function: registerSaveRouter],\n    weightsLoaderFactory: [Function: weightsLoaderFactory],\n    withSaveHandler: [Function: withSaveHandler],\n    copyModel: [Function: copyModel],\n    listModels: [Function: listModels],\n    moveModel: [Function: moveModel],\n    removeModel: [Function: removeModel],\n    fileSystem: [Function: fileSystem],\n    nodeHTTPRequest: [Function: nodeHTTPRequest]\n  },\n  ENV: Environment {\n    global: <ref *1> Object [global] {\n      gc: [Function: gc],\n      global: [Circular *1],\n      clearInterval: [Function: clearInterval],\n      clearTimeout: [Function: clearTimeout],\n      setInterval: [Function: setInterval],\n      setTimeout: [Function],\n      queueMicrotask: [Function: queueMicrotask],\n      clearImmediate: [Function: clearImmediate],\n      setImmediate: [Function],\n      '__core-js_shared__': [Object],\n      _tfGlobals: [Map],\n      _tfengine: [Engine],\n      proto: [Object],\n      dataForge: [Object],\n      tf: [Circular *2]\n    },\n    flags: {\n      IS_BROWSER: false,\n      IS_NODE: true,\n      DEBUG: false,\n      CPU_HANDOFF_SIZE_THRESHOLD: 128\n    },\n    flagRegistry: {\n      DEBUG: [Object],\n      IS_BROWSER: [Object],\n      IS_NODE: [Object],\n      IS_CHROME: [Object],\n      PROD: [Object],\n      TENSORLIKE_CHECK_SHAPE_CONSISTENCY: [Object],\n      DEPRECATION_WARNINGS_ENABLED: [Object],\n      IS_TEST: [Object],\n      CHECK_COMPUTATION_FOR_ERRORS: [Object],\n      WRAP_TO_IMAGEBITMAP: [Object],\n      HAS_WEBGL: [Object],\n      WEBGL_VERSION: [Object],\n      WEBGL_CHECK_NUMERICAL_PROBLEMS: [Object],\n      WEBGL_BUFFER_SUPPORTED: [Object],\n      WEBGL_CPU_FORWARD: [Object],\n      WEBGL_FORCE_F16_TEXTURES: [Object],\n      WEBGL_PACK: [Object],\n      WEBGL_PACK_NORMALIZATION: [Object],\n      WEBGL_PACK_CLIP: [Object],\n      WEBGL_PACK_DEPTHWISECONV: [Object],\n      WEBGL_PACK_BINARY_OPERATIONS: [Object],\n      WEBGL_PACK_UNARY_OPERATIONS: [Object],\n      WEBGL_PACK_ARRAY_OPERATIONS: [Object],\n      WEBGL_PACK_IMAGE_OPERATIONS: [Object],\n      WEBGL_PACK_REDUCE: [Object],\n      WEBGL_LAZILY_UNPACK: [Object],\n      WEBGL_CONV_IM2COL: [Object],\n      WEBGL_MAX_TEXTURE_SIZE: [Object],\n      WEBGL_MAX_TEXTURES_IN_SHADER: [Object],\n      WEBGL_DISJOINT_QUERY_TIMER_EXTENSION_VERSION: [Object],\n      WEBGL_DISJOINT_QUERY_TIMER_EXTENSION_RELIABLE: [Object],\n      WEBGL_RENDER_FLOAT32_CAPABLE: [Object],\n      WEBGL_RENDER_FLOAT32_ENABLED: [Object],\n      WEBGL_DOWNLOAD_FLOAT_ENABLED: [Object],\n      WEBGL_FENCE_API_ENABLED: [Object],\n      WEBGL_SIZE_UPLOAD_UNIFORM: [Object],\n      WEBGL_DELETE_TEXTURE_THRESHOLD: [Object],\n      WEBGL_FLUSH_THRESHOLD: [Object],\n      CPU_HANDOFF_SIZE_THRESHOLD: [Object],\n      WEBGL_USE_SHAPES_UNIFORMS: [Object],\n      TOPK_LAST_DIM_CPU_HANDOFF_SIZE_THRESHOLD: [Object],\n      TOPK_K_CPU_HANDOFF_THRESHOLD: [Object]\n    },\n    urlFlags: {},\n    getQueryParams: [Function: getQueryParams],\n    platformName: 'node',\n    platform: PlatformNode { util: [Object], textEncoder: [TextEncoder] }\n  },\n  Rank: {\n    R0: 'R0',\n    R1: 'R1',\n    R2: 'R2',\n    R3: 'R3',\n    R4: 'R4',\n    R5: 'R5',\n    R6: 'R6'\n  },\n  Reduction: {\n    '0': 'NONE',\n    '1': 'MEAN',\n    '2': 'SUM',\n    '3': 'SUM_BY_NONZERO_WEIGHTS',\n    NONE: 0,\n    MEAN: 1,\n    SUM: 2,\n    SUM_BY_NONZERO_WEIGHTS: 3\n  },\n  Abs: 'Abs',\n  Acos: 'Acos',\n  Acosh: 'Acosh',\n  AdadeltaOptimizer: [Function: AdadeltaOptimizer] {\n    fromConfig: [Function (anonymous)],\n    className: 'Adadelta'\n  },\n  AdagradOptimizer: [Function: AdagradOptimizer] {\n    fromConfig: [Function (anonymous)],\n    className: 'Adagrad'\n  },\n  AdamOptimizer: [Function: AdamOptimizer] {\n    fromConfig: [Function (anonymous)],\n    className: 'Adam'\n  },\n  AdamaxOptimizer: [Function: AdamaxOptimizer] {\n    fromConfig: [Function (anonymous)],\n    className: 'Adamax'\n  },\n  Add: 'Add',\n  AddN: 'AddN',\n  All: 'All',\n  Any: 'Any',\n  ArgMax: 'ArgMax',\n  ArgMin: 'ArgMin',\n  Asin: 'Asin',\n  Asinh: 'Asinh',\n  Atan: 'Atan',\n  Atan2: 'Atan2',\n  Atanh: 'Atanh',\n  AvgPool: 'AvgPool',\n  AvgPool3D: 'AvgPool3D',\n  AvgPool3DGrad: 'AvgPool3DGrad',\n  AvgPoolGrad: 'AvgPoolGrad',\n  BatchMatMul: 'BatchMatMul',\n  BatchToSpaceND: 'BatchToSpaceND',\n  Bincount: 'Bincount',\n  BroadcastArgs: 'BroadcastArgs',\n  BroadcastTo: 'BroadcastTo',\n  Cast: 'Cast',\n  Ceil: 'Ceil',\n  ClipByValue: 'ClipByValue',\n  Complex: 'Complex',\n  ComplexAbs: 'ComplexAbs',\n  Concat: 'Concat',\n  Conv2D: 'Conv2D',\n  Conv2DBackpropFilter: 'Conv2DBackpropFilter',\n  Conv2DBackpropInput: 'Conv2DBackpropInput',\n  Conv3D: 'Conv3D',\n  Conv3DBackpropFilterV2: 'Conv3DBackpropFilterV2',\n  Conv3DBackpropInputV2: 'Conv3DBackpropInputV2',\n  Cos: 'Cos',\n  Cosh: 'Cosh',\n  CropAndResize: 'CropAndResize',\n  Cumsum: 'Cumsum',\n  DataStorage: [Function: DataStorage],\n  DenseBincount: 'DenseBincount',\n  DepthToSpace: 'DepthToSpace',\n  DepthwiseConv2dNative: 'DepthwiseConv2dNative',\n  DepthwiseConv2dNativeBackpropFilter: 'DepthwiseConv2dNativeBackpropFilter',\n  DepthwiseConv2dNativeBackpropInput: 'DepthwiseConv2dNativeBackpropInput',\n  Diag: 'Diag',\n  Dilation2D: 'Dilation2D',\n  Dilation2DBackpropFilter: 'Dilation2DBackpropFilter',\n  Dilation2DBackpropInput: 'Dilation2DBackpropInput',\n  Einsum: 'Einsum',\n  Elu: 'Elu',\n  EluGrad: 'EluGrad',\n  Environment: [Function: Environment],\n  Equal: 'Equal',\n  Erf: 'Erf',\n  Exp: 'Exp',\n  ExpandDims: 'ExpandDims',\n  Expm1: 'Expm1',\n  FFT: 'FFT',\n  Fill: 'Fill',\n  FlipLeftRight: 'FlipLeftRight',\n  Floor: 'Floor',\n  FloorDiv: 'FloorDiv',\n  FromPixels: 'FromPixels',\n  FusedBatchNorm: 'FusedBatchNorm',\n  FusedConv2D: 'FusedConv2D',\n  FusedDepthwiseConv2D: 'FusedDepthwiseConv2D',\n  GatherNd: 'GatherNd',\n  GatherV2: 'GatherV2',\n  Greater: 'Greater',\n  GreaterEqual: 'GreaterEqual',\n  IFFT: 'IFFT',\n  Identity: 'Identity',\n  Imag: 'Imag',\n  IsFinite: 'IsFinite',\n  IsInf: 'IsInf',\n  IsNan: 'IsNan',\n  KernelBackend: [Function: KernelBackend],\n  LRN: 'LRN',\n  LRNGrad: 'LRNGrad',\n  LeakyRelu: 'LeakyRelu',\n  Less: 'Less',\n  LessEqual: 'LessEqual',\n  LinSpace: 'LinSpace',\n  Log: 'Log',\n  Log1p: 'Log1p',\n  LogSoftmax: 'LogSoftmax',\n  LogicalAnd: 'LogicalAnd',\n  LogicalNot: 'LogicalNot',\n  LogicalOr: 'LogicalOr',\n  Max: 'Max',\n  MaxPool: 'MaxPool',\n  MaxPool3D: 'MaxPool3D',\n  MaxPool3DGrad: 'MaxPool3DGrad',\n  MaxPoolGrad: 'MaxPoolGrad',\n  MaxPoolWithArgmax: 'MaxPoolWithArgmax',\n  Maximum: 'Maximum',\n  Mean: 'Mean',\n  Min: 'Min',\n  Minimum: 'Minimum',\n  MirrorPad: 'MirrorPad',\n  Mod: 'Mod',\n  MomentumOptimizer: [Function: MomentumOptimizer] {\n    fromConfig: [Function (anonymous)],\n    className: 'Momentum'\n  },\n  Multinomial: 'Multinomial',\n  Multiply: 'Multiply',\n  Neg: 'Neg',\n  NonMaxSuppressionV3: 'NonMaxSuppressionV3',\n  NonMaxSuppressionV4: 'NonMaxSuppressionV4',\n  NonMaxSuppressionV5: 'NonMaxSuppressionV5',\n  NotEqual: 'NotEqual',\n  OP_SCOPE_SUFFIX: '__op',\n  OneHot: 'OneHot',\n  OnesLike: 'OnesLike',\n  Optimizer: [Function: Optimizer],\n  OptimizerConstructors: [Function: OptimizerConstructors] {\n    sgd: [Function (anonymous)],\n    momentum: [Function (anonymous)],\n    rmsprop: [Function (anonymous)],\n    adam: [Function (anonymous)],\n    adadelta: [Function (anonymous)],\n    adamax: [Function (anonymous)],\n    adagrad: [Function (anonymous)]\n  },\n  Pack: 'Pack',\n  PadV2: 'PadV2',\n  Pool: 'Pool',\n  Pow: 'Pow',\n  Prelu: 'Prelu',\n  Prod: 'Prod',\n  RMSPropOptimizer: [Function: RMSPropOptimizer] {\n    fromConfig: [Function (anonymous)],\n    className: 'RMSProp'\n  },\n  Range: 'Range',\n  Real: 'Real',\n  RealDiv: 'RealDiv',\n  Reciprocal: 'Reciprocal',\n  Relu: 'Relu',\n  Relu6: 'Relu6',\n  Reshape: 'Reshape',\n  ResizeBilinear: 'ResizeBilinear',\n  ResizeBilinearGrad: 'ResizeBilinearGrad',\n  ResizeNearestNeighbor: 'ResizeNearestNeighbor',\n  ResizeNearestNeighborGrad: 'ResizeNearestNeighborGrad',\n  Reverse: 'Reverse',\n  RotateWithOffset: 'RotateWithOffset',\n  Round: 'Round',\n  Rsqrt: 'Rsqrt',\n  SGDOptimizer: [Function: SGDOptimizer] {\n    fromConfig: [Function (anonymous)],\n    className: 'SGD'\n  },\n  ScatterNd: 'ScatterNd',\n  Select: 'Select',\n  Selu: 'Selu',\n  Sigmoid: 'Sigmoid',\n  Sign: 'Sign',\n  Sin: 'Sin',\n  Sinh: 'Sinh',\n  Slice: 'Slice',\n  Softmax: 'Softmax',\n  Softplus: 'Softplus',\n  SpaceToBatchND: 'SpaceToBatchND',\n  SparseFillEmptyRows: 'SparseFillEmptyRows',\n  SparseReshape: 'SparseReshape',\n  SparseSegmentMean: 'SparseSegmentMean',\n  SparseSegmentSum: 'SparseSegmentSum',\n  SparseToDense: 'SparseToDense',\n  SplitV: 'SplitV',\n  Sqrt: 'Sqrt',\n  Square: 'Square',\n  SquaredDifference: 'SquaredDifference',\n  Step: 'Step',\n  StridedSlice: 'StridedSlice',\n  StringNGrams: 'StringNGrams',\n  StringSplit: 'StringSplit',\n  StringToHashBucketFast: 'StringToHashBucketFast',\n  Sub: 'Sub',\n  Sum: 'Sum',\n  Tan: 'Tan',\n  Tanh: 'Tanh',\n  Tensor: [Function: Tensor],\n  TensorBuffer: [Function: TensorBuffer],\n  Tile: 'Tile',\n  TopK: 'TopK',\n  Transform: 'Transform',\n  Transpose: 'Transpose',\n  Unique: 'Unique',\n  Unpack: 'Unpack',\n  UnsortedSegmentSum: 'UnsortedSegmentSum',\n  Variable: [Function: Variable],\n  ZerosLike: 'ZerosLike',\n  _FusedMatMul: '_FusedMatMul',\n  abs: [Function: abs__op],\n  acos: [Function: acos__op],\n  acosh: [Function: acosh__op],\n  add: [Function: add__op],\n  addN: [Function: addN__op],\n  all: [Function: all__op],\n  any: [Function: any__op],\n  argMax: [Function: argMax__op],\n  argMin: [Function: argMin__op],\n  asin: [Function: asin__op],\n  asinh: [Function: asinh__op],\n  atan: [Function: atan__op],\n  atan2: [Function: atan2__op],\n  atanh: [Function: atanh__op],\n  avgPool: [Function: avgPool__op],\n  avgPool3d: [Function: avgPool3d__op],\n  backend: [Function: backend],\n  backend_util: [Object: null prototype] {\n    slice_util: [Object: null prototype] {\n      assertParamsValid: [Function: assertParamsValid],\n      maskToAxes: [Function: maskToAxes],\n      computeOutShape: [Function: computeOutShape$2],\n      stridesWithElidedDims: [Function: stridesWithElidedDims],\n      getNormalizedAxes: [Function: getNormalizedAxes],\n      startIndicesWithElidedDims: [Function: startIndicesWithElidedDims],\n      stopIndicesWithElidedDims: [Function: stopIndicesWithElidedDims],\n      stridesForAxis: [Function: stridesForAxis],\n      startForAxis: [Function: startForAxis],\n      stopForAxis: [Function: stopForAxis],\n      isSliceContinous: [Function: isSliceContinous],\n      computeFlatOffset: [Function: computeFlatOffset],\n      parseSliceParams: [Function: parseSliceParams],\n      sliceInfo: [Function: sliceInfo]\n    },\n    segment_util: [Object: null prototype] {\n      segOpComputeOptimalWindowSize: [Function: segOpComputeOptimalWindowSize],\n      computeOutShape: [Function: computeOutShape],\n      collectGatherOpShapeInfo: [Function: collectGatherOpShapeInfo]\n    },\n    fromUint8ToStringArray: [Function: fromUint8ToStringArray],\n    fromStringArrayToUint8: [Function: fromStringArrayToUint8],\n    upcastType: [Function: upcastType],\n    axesAreInnerMostDims: [Function: axesAreInnerMostDims],\n    combineLocations: [Function: combineLocations],\n    computeOutAndReduceShapes: [Function: computeOutAndReduceShapes],\n    expandShapeToKeepDim: [Function: expandShapeToKeepDim],\n    assertAxesAreInnerMostDims: [Function: assertAxesAreInnerMostDims],\n    getAxesPermutation: [Function: getAxesPermutation],\n    getUndoAxesPermutation: [Function: getUndoAxesPermutation],\n    getInnerMostAxes: [Function: getInnerMostAxes],\n    getBroadcastDims: [Function: getBroadcastDims],\n    getReductionAxes: [Function: getReductionAxes],\n    assertAndGetBroadcastShape: [Function: assertAndGetBroadcastShape],\n    assertParamsConsistent: [Function: assertParamsConsistent],\n    computeOutShape: [Function: computeOutShape$1],\n    computeDilation2DInfo: [Function: computeDilation2DInfo],\n    computePool2DInfo: [Function: computePool2DInfo],\n    computePool3DInfo: [Function: computePool3DInfo],\n    computeConv2DInfo: [Function: computeConv2DInfo],\n    computeConv3DInfo: [Function: computeConv3DInfo],\n    computeDefaultPad: [Function: computeDefaultPad],\n    tupleValuesAreOne: [Function: tupleValuesAreOne],\n    eitherStridesOrDilationsAreOne: [Function: eitherStridesOrDilationsAreOne],\n    convertConv2DDataFormat: [Function: convertConv2DDataFormat],\n    getFusedDyActivation: [Function: getFusedDyActivation],\n    getFusedBiasGradient: [Function: getFusedBiasGradient],\n    applyActivation: [Function: applyActivation],\n    shouldFuse: [Function: shouldFuse],\n    PARALLELIZE_THRESHOLD: 30,\n    computeOptimalWindowSize: [Function: computeOptimalWindowSize],\n    getImageCenter: [Function: getImageCenter],\n    getReshaped: [Function: getReshaped],\n    getPermuted: [Function: getPermuted],\n    getReshapedPermuted: [Function: getReshapedPermuted],\n    getSliceBeginCoords: [Function: getSliceBeginCoords],\n    getSliceSize: [Function: getSliceSize],\n    prepareAndValidate: [Function: prepareAndValidate],\n    validateUpdateShape: [Function: validateUpdateShape],\n    validateInput: [Function: validateInput$1],\n    calculateShapes: [Function: calculateShapes],\n    SELU_SCALEALPHA: 1.7580993408473768,\n    SELU_SCALE: 1.0507009873554805,\n    ERF_P: 0.3275911,\n    ERF_A1: 0.254829592,\n    ERF_A2: -0.284496736,\n    ERF_A3: 1.421413741,\n    ERF_A4: -1.453152027,\n    ERF_A5: 1.061405429,\n    warn: [Function: warn],\n    log: [Function: log$1],\n    mergeRealAndImagArrays: [Function: mergeRealAndImagArrays],\n    splitRealAndImagArrays: [Function: splitRealAndImagArrays],\n    complexWithEvenIndex: [Function: complexWithEvenIndex],\n    complexWithOddIndex: [Function: complexWithOddIndex],\n    getComplexWithIndex: [Function: getComplexWithIndex],\n    assignToTypedArray: [Function: assignToTypedArray],\n    exponents: [Function: exponents],\n    exponent: [Function: exponent],\n    decodeEinsumEquation: [Function: decodeEinsumEquation],\n    getEinsumPermutation: [Function: getEinsumPermutation],\n    checkEinsumDimSizes: [Function: checkEinsumDimSizes],\n    getEinsumComputePath: [Function: getEinsumComputePath],\n    isIdentityPermutation: [Function: isIdentityPermutation],\n    prepareSplitSize: [Function: prepareSplitSize]\n  },\n  basicLSTMCell: [Function: basicLSTMCell__op],\n  batchNorm: [Function: batchNorm__op],\n  batchNorm2d: [Function: batchNorm2d__op],\n  batchNorm3d: [Function: batchNorm3d__op],\n  batchNorm4d: [Function: batchNorm4d__op],\n  batchToSpaceND: [Function: batchToSpaceND__op],\n  bincount: [Function: bincount__op],\n  booleanMaskAsync: [Function: booleanMaskAsync_],\n  broadcastArgs: [Function: broadcastArgs__op],\n  broadcastTo: [Function: broadcastTo__op],\n  browser: [Object: null prototype] {\n    fromPixelsAsync: [Function: fromPixelsAsync],\n    toPixels: [Function: toPixels],\n    fromPixels: [Function: fromPixels__op]\n  },\n  buffer: [Function: buffer],\n  cast: [Function: cast__op],\n  ceil: [Function: ceil__op],\n  clipByValue: [Function: clipByValue__op],\n  clone: [Function: clone__op],\n  complex: [Function: complex__op],\n  concat: [Function: concat__op],\n  concat1d: [Function: concat1d__op],\n  concat2d: [Function: concat2d__op],\n  concat3d: [Function: concat3d__op],\n  concat4d: [Function: concat4d__op],\n  conv1d: [Function: conv1d__op],\n  conv2d: [Function: conv2d__op],\n  conv2dTranspose: [Function: conv2dTranspose__op],\n  conv3d: [Function: conv3d__op],\n  conv3dTranspose: [Function: conv3dTranspose__op],\n  copyRegisteredKernels: [Function: copyRegisteredKernels],\n  cos: [Function: cos__op],\n  cosh: [Function: cosh__op],\n  cosineWindow: [Function: cosineWindow],\n  cumsum: [Function: cumsum__op],\n  customGrad: [Function: customGrad],\n  denseBincount: [Function: denseBincount__op],\n  deprecationWarn: [Function: deprecationWarn],\n  depthToSpace: [Function: depthToSpace__op],\n  depthwiseConv2d: [Function: depthwiseConv2d__op],\n  device_util: [Object: null prototype] {\n    mockIsMobile: [Function: mockIsMobile],\n    isMobile: [Function: isMobile],\n    isBrowser: [Function: isBrowser]\n  },\n  diag: [Function: diag__op],\n  dilation2d: [Function: dilation2d__op],\n  disableDeprecationWarnings: [Function: disableDeprecationWarnings],\n  dispose: [Function: dispose],\n  disposeVariables: [Function: disposeVariables],\n  div: [Function: div__op],\n  divNoNan: [Function: divNoNan__op],\n  dot: [Function: dot__op],\n  dropout: [Function: dropout__op],\n  einsum: [Function: einsum__op],\n  elu: [Function: elu__op],\n  enableDebugMode: [Function: enableDebugMode],\n  enableProdMode: [Function: enableProdMode],\n  enclosingPowerOfTwo: [Function: enclosingPowerOfTwo],\n  engine: [Function: engine],\n  env: [Function: env],\n  equal: [Function: equal__op],\n  erf: [Function: erf__op],\n  exp: [Function: exp__op],\n  expandDims: [Function: expandDims__op],\n  expm1: [Function: expm1__op],\n  eye: [Function: eye__op],\n  fft: [Function: fft__op],\n  fill: [Function: fill],\n  findBackend: [Function: findBackend],\n  findBackendFactory: [Function: findBackendFactory],\n  floor: [Function: floor__op],\n  floorDiv: [Function: floorDiv__op],\n  fused: [Object: null prototype] {\n    conv2d: [Function: fusedConv2d__op],\n    depthwiseConv2d: [Function: fusedDepthwiseConv2d__op],\n    matMul: [Function: fusedMatMul__op]\n  },\n  gather: [Function: gather__op],\n  gatherND: [Function: gatherND__op],\n  gather_util: [Object: null prototype] {\n    prepareAndValidate: [Function: prepareAndValidate]\n  },\n  getBackend: [Function: getBackend],\n  getGradient: [Function: getGradient],\n  getKernel: [Function: getKernel],\n  getKernelsForBackend: [Function: getKernelsForBackend],\n  grad: [Function: grad],\n  grads: [Function: grads],\n  greater: [Function: greater__op],\n  greaterEqual: [Function: greaterEqual__op],\n  ifft: [Function: ifft__op],\n  imag: [Function: imag__op],\n  image: {\n    flipLeftRight: [Function: flipLeftRight__op],\n    grayscaleToRGB: [Function: grayscaleToRGB__op],\n    resizeNearestNeighbor: [Function: resizeNearestNeighbor__op],\n    resizeBilinear: [Function: resizeBilinear__op],\n    rotateWithOffset: [Function: rotateWithOffset__op],\n    cropAndResize: [Function: cropAndResize__op],\n    nonMaxSuppression: [Function: nonMaxSuppression__op],\n    nonMaxSuppressionAsync: [Function: nonMaxSuppressionAsync_],\n    nonMaxSuppressionWithScore: [Function: nonMaxSuppressionWithScore__op],\n    nonMaxSuppressionWithScoreAsync: [Function: nonMaxSuppressionWithScoreAsync_],\n    nonMaxSuppressionPadded: [Function: nonMaxSuppressionPadded__op],\n    nonMaxSuppressionPaddedAsync: [Function: nonMaxSuppressionPaddedAsync_],\n    threshold: [Function: threshold__op],\n    transform: [Function: transform__op]\n  },\n  inTopKAsync: [Function: inTopKAsync_],\n  irfft: [Function: irfft__op],\n  isFinite: [Function: isFinite__op],\n  isInf: [Function: isInf__op],\n  isNaN: [Function: isNaN__op],\n  keep: [Function: keep],\n  kernel_impls: [Object: null prototype] {\n    nonMaxSuppressionV3Impl: [Function: nonMaxSuppressionV3Impl],\n    nonMaxSuppressionV4Impl: [Function: nonMaxSuppressionV4Impl],\n    nonMaxSuppressionV5Impl: [Function: nonMaxSuppressionV5Impl],\n    whereImpl: [Function: whereImpl]\n  },\n  leakyRelu: [Function: leakyRelu__op],\n  less: [Function: less__op],\n  lessEqual: [Function: lessEqual__op],\n  linalg: {\n    bandPart: [Function: bandPart__op],\n    gramSchmidt: [Function: gramSchmidt__op],\n    qr: [Function: qr__op]\n  },\n  linspace: [Function: linspace],\n  localResponseNormalization: [Function: localResponseNormalization__op],\n  log: [Function: log__op],\n  log1p: [Function: log1p__op],\n  logSigmoid: [Function: logSigmoid__op],\n  logSoftmax: [Function: logSoftmax__op],\n  logSumExp: [Function: logSumExp__op],\n  logicalAnd: [Function: logicalAnd__op],\n  logicalNot: [Function: logicalNot__op],\n  logicalOr: [Function: logicalOr__op],\n  logicalXor: [Function: logicalXor__op],\n  losses: {\n    absoluteDifference: [Function: absoluteDifference__op],\n    computeWeightedLoss: [Function: computeWeightedLoss__op],\n    cosineDistance: [Function: cosineDistance__op],\n    hingeLoss: [Function: hingeLoss__op],\n    huberLoss: [Function: huberLoss__op],\n    logLoss: [Function: logLoss__op],\n    meanSquaredError: [Function: meanSquaredError__op],\n    sigmoidCrossEntropy: [Function: sigmoidCrossEntropy__op],\n    softmaxCrossEntropy: [Function: softmaxCrossEntropy__op]\n  },\n  matMul: [Function: matMul__op],\n  math: [Object: null prototype] {\n    confusionMatrix: [Function: confusionMatrix__op]\n  },\n  max: [Function: max__op],\n  maxPool: [Function: maxPool__op],\n  maxPool3d: [Function: maxPool3d__op],\n  maxPoolWithArgmax: [Function: maxPoolWithArgmax__op],\n  maximum: [Function: maximum__op],\n  mean: [Function: mean__op],\n  memory: [Function: memory],\n  meshgrid: [Function: meshgrid],\n  min: [Function: min__op],\n  minimum: [Function: minimum__op],\n  mirrorPad: [Function: mirrorPad__op],\n  mod: [Function: mod__op],\n  moments: [Function: moments__op],\n  movingAverage: [Function: movingAverage__op],\n  mul: [Function: mul__op],\n  multiRNNCell: [Function: multiRNNCell__op],\n  multinomial: [Function: multinomial__op],\n  neg: [Function: neg__op],\n  nextFrame: [Function: nextFrame],\n  norm: [Function: norm__op],\n  notEqual: [Function: notEqual__op],\n  oneHot: [Function: oneHot__op],\n  ones: [Function: ones],\n  onesLike: [Function: onesLike__op],\n  op: [Function: op],\n  outerProduct: [Function: outerProduct__op],\n  pad: [Function: pad__op],\n  pad1d: [Function: pad1d__op],\n  pad2d: [Function: pad2d__op],\n  pad3d: [Function: pad3d__op],\n  pad4d: [Function: pad4d__op],\n  pool: [Function: pool__op],\n  pow: [Function: pow__op],\n  prelu: [Function: prelu__op],\n  print: [Function: print],\n  prod: [Function: prod__op],\n  profile: [Function: profile],\n  rand: [Function: rand__op],\n  randomGamma: [Function: randomGamma__op],\n  randomNormal: [Function: randomNormal__op],\n  randomUniform: [Function: randomUniform__op],\n  range: [Function: range],\n  ready: [Function: ready],\n  real: [Function: real__op],\n  reciprocal: [Function: reciprocal__op],\n  registerBackend: [Function: registerBackend],\n  registerGradient: [Function: registerGradient],\n  registerKernel: [Function: registerKernel],\n  relu: [Function: relu__op],\n  relu6: [Function: relu6__op],\n  removeBackend: [Function: removeBackend],\n  reshape: [Function: reshape__op],\n  reverse: [Function: reverse__op],\n  reverse1d: [Function: reverse1d__op],\n  reverse2d: [Function: reverse2d__op],\n  reverse3d: [Function: reverse3d__op],\n  reverse4d: [Function: reverse4d__op],\n  rfft: [Function: rfft__op],\n  round: [Function: round__op],\n  rsqrt: [Function: rsqrt__op],\n  scalar: [Function: scalar],\n  scatterND: [Function: scatterND__op],\n  scatter_util: [Object: null prototype] {\n    validateUpdateShape: [Function: validateUpdateShape],\n    validateInput: [Function: validateInput$1],\n    calculateShapes: [Function: calculateShapes]\n  },\n  selu: [Function: selu__op],\n  separableConv2d: [Function: separableConv2d__op],\n  serialization: [Object: null prototype] {\n    Serializable: [Function: Serializable] { fromConfig: [Function (anonymous)] },\n    SerializationMap: [Function: SerializationMap] {\n      getMap: [Function (anonymous)],\n      register: [Function (anonymous)],\n      instance: [SerializationMap]\n    },\n    registerClass: [Function: registerClass]\n  },\n  setBackend: [Function: setBackend],\n  setPlatform: [Function: setPlatform],\n  setdiff1dAsync: [Function: setdiff1dAsync_],\n  sigmoid: [Function: sigmoid__op],\n  sign: [Function: sign__op],\n  signal: {\n    hammingWindow: [Function: hammingWindow__op],\n    hannWindow: [Function: hannWindow__op],\n    frame: [Function: frame__op],\n    stft: [Function: stft__op]\n  },\n  sin: [Function: sin__op],\n  sinh: [Function: sinh__op],\n  slice: [Function: slice__op],\n  slice1d: [Function: slice1d__op],\n  slice2d: [Function: slice2d__op],\n  slice3d: [Function: slice3d__op],\n  slice4d: [Function: slice4d__op],\n  slice_util: [Object: null prototype] {\n    assertParamsValid: [Function: assertParamsValid],\n    maskToAxes: [Function: maskToAxes],\n    computeOutShape: [Function: computeOutShape$2],\n    stridesWithElidedDims: [Function: stridesWithElidedDims],\n    getNormalizedAxes: [Function: getNormalizedAxes],\n    startIndicesWithElidedDims: [Function: startIndicesWithElidedDims],\n    stopIndicesWithElidedDims: [Function: stopIndicesWithElidedDims],\n    stridesForAxis: [Function: stridesForAxis],\n    startForAxis: [Function: startForAxis],\n    stopForAxis: [Function: stopForAxis],\n    isSliceContinous: [Function: isSliceContinous],\n    computeFlatOffset: [Function: computeFlatOffset],\n    parseSliceParams: [Function: parseSliceParams],\n    sliceInfo: [Function: sliceInfo]\n  },\n  softmax: [Function: softmax__op],\n  softplus: [Function: softplus__op],\n  spaceToBatchND: [Function: spaceToBatchND__op],\n  sparse: {\n    sparseFillEmptyRows: [Function: sparseFillEmptyRows__op],\n    sparseReshape: [Function: sparseReshape__op],\n    sparseSegmentMean: [Function: sparseSegmentMean__op],\n    sparseSegmentSum: [Function: sparseSegmentSum__op]\n  },\n  sparseToDense: [Function: sparseToDense__op],\n  spectral: {\n    fft: [Function: fft__op],\n    ifft: [Function: ifft__op],\n    rfft: [Function: rfft__op],\n    irfft: [Function: irfft__op]\n  },\n  split: [Function: split__op],\n  sqrt: [Function: sqrt__op],\n  square: [Function: square__op],\n  squaredDifference: [Function: squaredDifference__op],\n  squeeze: [Function: squeeze__op],\n  stack: [Function: stack__op],\n  step: [Function: step__op],\n  stridedSlice: [Function: stridedSlice__op],\n  string: {\n    stringNGrams: [Function: stringNGrams__op],\n    stringSplit: [Function: stringSplit__op],\n    stringToHashBucketFast: [Function: stringToHashBucketFast__op]\n  },\n  sub: [Function: sub__op],\n  sum: [Function: sum__op],\n  sumOutType: [Function: sumOutType],\n  tan: [Function: tan__op],\n  tanh: [Function: tanh__op],\n  tensor: [Function: tensor],\n  tensor1d: [Function: tensor1d],\n  tensor2d: [Function: tensor2d],\n  tensor3d: [Function: tensor3d],\n  tensor4d: [Function: tensor4d],\n  tensor5d: [Function: tensor5d],\n  tensor6d: [Function: tensor6d],\n  tensor_util: [Object: null prototype] {\n    makeTypesMatch: [Function: makeTypesMatch],\n    assertTypesMatch: [Function: assertTypesMatch],\n    isTensorInList: [Function: isTensorInList],\n    getTensorsInContainer: [Function: getTensorsInContainer]\n  },\n  test_util: [Object: null prototype] {\n    TEST_EPSILON_FLOAT16: 0.1,\n    expectArraysClose: [Function: expectArraysClose],\n    testEpsilon: [Function: testEpsilon],\n    expectPromiseToFail: [Function: expectPromiseToFail],\n    expectArraysEqual: [Function: expectArraysEqual],\n    expectNumbersClose: [Function: expectNumbersClose],\n    expectValuesInRange: [Function: expectValuesInRange],\n    expectArrayBuffersEqual: [Function: expectArrayBuffersEqual],\n    encodeStrings: [Function: encodeStrings]\n  },\n  tidy: [Function: tidy],\n  tile: [Function: tile__op],\n  time: [Function: time],\n  topk: [Function: topk__op],\n  train: {\n    sgd: [Function (anonymous)],\n    momentum: [Function (anonymous)],\n    adadelta: [Function (anonymous)],\n    adagrad: [Function (anonymous)],\n    rmsprop: [Function (anonymous)],\n    adamax: [Function (anonymous)],\n    adam: [Function (anonymous)]\n  },\n  transpose: [Function: transpose__op],\n  truncatedNormal: [Function: truncatedNormal__op],\n  unique: [Function: unique__op],\n  unregisterGradient: [Function: unregisterGradient],\n  unregisterKernel: [Function: unregisterKernel],\n  unsortedSegmentSum: [Function: unsortedSegmentSum__op],\n  unstack: [Function: unstack__op],\n  upcastType: [Function: upcastType],\n  util: [Object: null prototype] {\n    createScalarValue: [Function: createScalarValue],\n    toTypedArray: [Function: toTypedArray],\n    now: [Function: now],\n    fetch: [Function: fetch$1],\n    encodeString: [Function: encodeString],\n    decodeString: [Function: decodeString],\n    shuffle: [Function: shuffle],\n    shuffleCombo: [Function: shuffleCombo],\n    clamp: [Function: clamp],\n    nearestLargerEven: [Function: nearestLargerEven],\n    swap: [Function: swap],\n    sum: [Function: sum$1],\n    randUniform: [Function: randUniform],\n    distSquared: [Function: distSquared],\n    assert: [Function: assert],\n    assertShapesMatch: [Function: assertShapesMatch],\n    assertNonNull: [Function: assertNonNull],\n    flatten: [Function: flatten],\n    sizeFromShape: [Function: sizeFromShape],\n    isScalarShape: [Function: isScalarShape],\n    arraysEqual: [Function: arraysEqual],\n    isInt: [Function: isInt],\n    tanh: [Function: tanh$1],\n    sizeToSquarishShape: [Function: sizeToSquarishShape],\n    createShuffledIndices: [Function: createShuffledIndices],\n    rightPad: [Function: rightPad],\n    repeatedTry: [Function: repeatedTry],\n    inferFromImplicitShape: [Function: inferFromImplicitShape],\n    parseAxisParam: [Function: parseAxisParam],\n    squeezeShape: [Function: squeezeShape],\n    getTypedArrayFromDType: [Function: getTypedArrayFromDType],\n    getArrayFromDType: [Function: getArrayFromDType],\n    checkConversionForErrors: [Function: checkConversionForErrors],\n    isValidDtype: [Function: isValidDtype],\n    hasEncodingLoss: [Function: hasEncodingLoss],\n    isTypedArray: [Function: isTypedArray],\n    bytesPerElement: [Function: bytesPerElement],\n    bytesFromStringArray: [Function: bytesFromStringArray],\n    isString: [Function: isString],\n    isBoolean: [Function: isBoolean],\n    isNumber: [Function: isNumber],\n    inferDtype: [Function: inferDtype],\n    isFunction: [Function: isFunction],\n    nearestDivisor: [Function: nearestDivisor],\n    computeStrides: [Function: computeStrides],\n    toNestedArray: [Function: toNestedArray],\n    makeOnesTypedArray: [Function: makeOnesTypedArray],\n    makeZerosTypedArray: [Function: makeZerosTypedArray],\n    makeZerosNestedTypedArray: [Function: makeZerosNestedTypedArray],\n    assertNonNegativeIntegerDimensions: [Function: assertNonNegativeIntegerDimensions],\n    locToIndex: [Function: locToIndex],\n    indexToLoc: [Function: indexToLoc],\n    isPromise: [Function: isPromise],\n    hexToLong: [Function: hexToLong],\n    fingerPrint64: [Function: fingerPrint64]\n  },\n  valueAndGrad: [Function: valueAndGrad],\n  valueAndGrads: [Function: valueAndGrads],\n  variable: [Function: variable],\n  variableGrads: [Function: variableGrads],\n  version_core: '3.11.0',\n  where: [Function: where__op],\n  whereAsync: [Function: whereAsync_],\n  zeros: [Function: zeros],\n  zerosLike: [Function: zerosLike__op],\n  Callback: [Function: Callback],\n  CallbackList: [Function: CallbackList],\n  CustomCallback: [Function: CustomCallback],\n  EarlyStopping: [Function: EarlyStopping],\n  History: [Function: History],\n  InputSpec: [Function: InputSpec],\n  LayerVariable: [Function: LayerVariable],\n  LayersModel: [Function: LayersModel] { className: 'Model' },\n  RNN: [Function: RNN] {\n    fromConfig: [Function (anonymous)],\n    className: 'RNN'\n  },\n  Sequential: [Function: Sequential] {\n    fromConfig: [Function (anonymous)],\n    className: 'Sequential'\n  },\n  SymbolicTensor: [Function: SymbolicTensor],\n  callbacks: { earlyStopping: [Function: earlyStopping] },\n  constraints: [Object: null prototype] {\n    maxNorm: [Function: maxNorm],\n    unitNorm: [Function: unitNorm],\n    nonNeg: [Function: nonNeg],\n    minMaxNorm: [Function: minMaxNorm]\n  },\n  initializers: [Object: null prototype] {\n    zeros: [Function: zeros],\n    ones: [Function: ones],\n    constant: [Function: constant],\n    randomUniform: [Function: randomUniform],\n    randomNormal: [Function: randomNormal],\n    truncatedNormal: [Function: truncatedNormal],\n    identity: [Function: identity],\n    varianceScaling: [Function: varianceScaling],\n    glorotUniform: [Function: glorotUniform],\n    glorotNormal: [Function: glorotNormal],\n    heNormal: [Function: heNormal],\n    heUniform: [Function: heUniform],\n    leCunNormal: [Function: leCunNormal],\n    leCunUniform: [Function: leCunUniform],\n    orthogonal: [Function: orthogonal]\n  },\n  input: [Function: input],\n  layers: [Object: null prototype] {\n    inputLayer: [Function: inputLayer],\n    elu: [Function: elu],\n    reLU: [Function: reLU],\n    leakyReLU: [Function: leakyReLU],\n    prelu: [Function: prelu],\n    softmax: [Function: softmax],\n    thresholdedReLU: [Function: thresholdedReLU],\n    conv1d: [Function: conv1d],\n    conv2d: [Function: conv2d],\n    conv2dTranspose: [Function: conv2dTranspose],\n    conv3d: [Function: conv3d],\n    conv3dTranspose: [Function: conv3dTranspose],\n    separableConv2d: [Function: separableConv2d],\n    cropping2D: [Function: cropping2D],\n    upSampling2d: [Function: upSampling2d],\n    depthwiseConv2d: [Function: depthwiseConv2d],\n    activation: [Function: activation],\n    dense: [Function: dense],\n    dropout: [Function: dropout],\n    spatialDropout1d: [Function: spatialDropout1d],\n    flatten: [Function: flatten],\n    repeatVector: [Function: repeatVector],\n    reshape: [Function: reshape],\n    permute: [Function: permute],\n    embedding: [Function: embedding],\n    add: [Function: add],\n    average: [Function: average],\n    concatenate: [Function: concatenate],\n    maximum: [Function: maximum],\n    minimum: [Function: minimum],\n    multiply: [Function: multiply],\n    dot: [Function: dot],\n    batchNormalization: [Function: batchNormalization],\n    layerNormalization: [Function: layerNormalization],\n    zeroPadding2d: [Function: zeroPadding2d],\n    averagePooling1d: [Function: averagePooling1d],\n    avgPool1d: [Function: avgPool1d],\n    avgPooling1d: [Function: avgPooling1d],\n    averagePooling2d: [Function: averagePooling2d],\n    avgPool2d: [Function: avgPool2d],\n    avgPooling2d: [Function: avgPooling2d],\n    averagePooling3d: [Function: averagePooling3d],\n    avgPool3d: [Function: avgPool3d],\n    avgPooling3d: [Function: avgPooling3d],\n    globalAveragePooling1d: [Function: globalAveragePooling1d],\n    globalAveragePooling2d: [Function: globalAveragePooling2d],\n    globalMaxPooling1d: [Function: globalMaxPooling1d],\n    globalMaxPooling2d: [Function: globalMaxPooling2d],\n    maxPooling1d: [Function: maxPooling1d],\n    maxPooling2d: [Function: maxPooling2d],\n    maxPooling3d: [Function: maxPooling3d],\n    gru: [Function: gru],\n    gruCell: [Function: gruCell],\n    lstm: [Function: lstm],\n    lstmCell: [Function: lstmCell],\n    simpleRNN: [Function: simpleRNN],\n    simpleRNNCell: [Function: simpleRNNCell],\n    convLstm2d: [Function: convLstm2d],\n    convLstm2dCell: [Function: convLstm2dCell],\n    rnn: [Function: rnn],\n    stackedRNNCells: [Function: stackedRNNCells],\n    bidirectional: [Function: bidirectional],\n    timeDistributed: [Function: timeDistributed],\n    globalMaxPool1d: [Function: globalMaxPooling1d],\n    globalMaxPool2d: [Function: globalMaxPooling2d],\n    maxPool1d: [Function: maxPooling1d],\n    maxPool2d: [Function: maxPooling2d],\n    Layer: [Function: Layer] { nodeKey: [Function (anonymous)] },\n    RNN: [Function: RNN] {\n      fromConfig: [Function (anonymous)],\n      className: 'RNN'\n    },\n    RNNCell: [Function: RNNCell],\n    input: [Function: input],\n    gaussianNoise: [Function: gaussianNoise],\n    gaussianDropout: [Function: gaussianDropout],\n    alphaDropout: [Function: alphaDropout],\n    masking: [Function: masking]\n  },\n  loadLayersModel: [Function: loadLayersModel],\n  metrics: [Object: null prototype] {\n    binaryAccuracy: [Function: binaryAccuracy],\n    binaryCrossentropy: [Function: binaryCrossentropy],\n    sparseCategoricalAccuracy: [Function: sparseCategoricalAccuracy],\n    categoricalAccuracy: [Function: categoricalAccuracy],\n    categoricalCrossentropy: [Function: categoricalCrossentropy],\n    precision: [Function: precision],\n    recall: [Function: recall],\n    cosineProximity: [Function: cosineProximity],\n    meanAbsoluteError: [Function: meanAbsoluteError],\n    meanAbsolutePercentageError: [Function: meanAbsolutePercentageError],\n    MAPE: [Function: MAPE],\n    mape: [Function: mape],\n    meanSquaredError: [Function: meanSquaredError],\n    MSE: [Function: MSE],\n    mse: [Function: mse]\n  },\n  model: [Function: model],\n  models: [Object: null prototype] { modelFromJSON: [Function: modelFromJSON] },\n  registerCallbackConstructor: [Function: registerCallbackConstructor],\n  regularizers: [Object: null prototype] {\n    l1l2: [Function: l1l2],\n    l1: [Function: l1],\n    l2: [Function: l2]\n  },\n  sequential: [Function: sequential],\n  version_layers: '3.11.0',\n  GraphModel: [Function: GraphModel],\n  deregisterOp: [Function: deregisterOp],\n  loadGraphModel: [Function: loadGraphModel],\n  registerOp: [Function: registerOp],\n  version_converter: '3.11.0',\n  data: {\n    CSVDataset: [Function: CSVDataset],\n    Dataset: [Function: Dataset] { MAX_BUFFER_SIZE: 10000 },\n    FileDataSource: [Function: FileDataSource],\n    TextLineDataset: [Function: TextLineDataset],\n    URLDataSource: [Function: URLDataSource],\n    array: [Function: array],\n    csv: [Function: csv],\n    func: [Function: func],\n    generator: [Function: generator],\n    microphone: [Function: microphone],\n    version_data: '3.11.0',\n    webcam: [Function: webcam],\n    zip: [Function: zip]\n  },\n  node: {\n    decodeImage: [Function: decodeImage],\n    decodeBmp: [Function: decodeBmp],\n    decodeGif: [Function: decodeGif],\n    decodePng: [Function: decodePng],\n    decodeJpeg: [Function: decodeJpeg],\n    encodeJpeg: [Function: encodeJpeg],\n    encodePng: [Function: encodePng],\n    summaryFileWriter: [Function: summaryFileWriter],\n    tensorBoard: [Function: tensorBoard],\n    getMetaGraphsFromSavedModel: [Function: getMetaGraphsFromSavedModel],\n    getNumOfSavedModels: [Function: getNumOfSavedModels],\n    loadSavedModel: [Function: loadSavedModel]\n  }\n}\n"
+                            "data": "{\n  ENV: [Getter],\n  Rank: [Getter],\n  Reduction: [Getter],\n  Abs: [Getter],\n  Acos: [Getter],\n  Acosh: [Getter],\n  AdadeltaOptimizer: [Getter],\n  AdagradOptimizer: [Getter],\n  AdamOptimizer: [Getter],\n  AdamaxOptimizer: [Getter],\n  Add: [Getter],\n  AddN: [Getter],\n  All: [Getter],\n  Any: [Getter],\n  ArgMax: [Getter],\n  ArgMin: [Getter],\n  Asin: [Getter],\n  Asinh: [Getter],\n  Atan: [Getter],\n  Atan2: [Getter],\n  Atanh: [Getter],\n  AvgPool: [Getter],\n  AvgPool3D: [Getter],\n  AvgPool3DGrad: [Getter],\n  AvgPoolGrad: [Getter],\n  BatchMatMul: [Getter],\n  BatchToSpaceND: [Getter],\n  Bincount: [Getter],\n  BroadcastArgs: [Getter],\n  BroadcastTo: [Getter],\n  Cast: [Getter],\n  Ceil: [Getter],\n  ClipByValue: [Getter],\n  Complex: [Getter],\n  ComplexAbs: [Getter],\n  Concat: [Getter],\n  Conv2D: [Getter],\n  Conv2DBackpropFilter: [Getter],\n  Conv2DBackpropInput: [Getter],\n  Conv3D: [Getter],\n  Conv3DBackpropFilterV2: [Getter],\n  Conv3DBackpropInputV2: [Getter],\n  Cos: [Getter],\n  Cosh: [Getter],\n  CropAndResize: [Getter],\n  Cumsum: [Getter],\n  DataStorage: [Getter],\n  DenseBincount: [Getter],\n  DepthToSpace: [Getter],\n  DepthwiseConv2dNative: [Getter],\n  DepthwiseConv2dNativeBackpropFilter: [Getter],\n  DepthwiseConv2dNativeBackpropInput: [Getter],\n  Diag: [Getter],\n  Dilation2D: [Getter],\n  Dilation2DBackpropFilter: [Getter],\n  Dilation2DBackpropInput: [Getter],\n  Einsum: [Getter],\n  Elu: [Getter],\n  EluGrad: [Getter],\n  Environment: [Getter],\n  Equal: [Getter],\n  Erf: [Getter],\n  Exp: [Getter],\n  ExpandDims: [Getter],\n  Expm1: [Getter],\n  FFT: [Getter],\n  Fill: [Getter],\n  FlipLeftRight: [Getter],\n  Floor: [Getter],\n  FloorDiv: [Getter],\n  FromPixels: [Getter],\n  FusedBatchNorm: [Getter],\n  FusedConv2D: [Getter],\n  FusedDepthwiseConv2D: [Getter],\n  GatherNd: [Getter],\n  GatherV2: [Getter],\n  Greater: [Getter],\n  GreaterEqual: [Getter],\n  IFFT: [Getter],\n  Identity: [Getter],\n  Imag: [Getter],\n  IsFinite: [Getter],\n  IsInf: [Getter],\n  IsNan: [Getter],\n  KernelBackend: [Getter],\n  LRN: [Getter],\n  LRNGrad: [Getter],\n  LeakyRelu: [Getter],\n  Less: [Getter],\n  LessEqual: [Getter],\n  LinSpace: [Getter],\n  Log: [Getter],\n  Log1p: [Getter],\n  LogSoftmax: [Getter],\n  LogicalAnd: [Getter],\n  LogicalNot: [Getter],\n  LogicalOr: [Getter],\n  Max: [Getter],\n  MaxPool: [Getter],\n  MaxPool3D: [Getter],\n  MaxPool3DGrad: [Getter],\n  MaxPoolGrad: [Getter],\n  MaxPoolWithArgmax: [Getter],\n  Maximum: [Getter],\n  Mean: [Getter],\n  Min: [Getter],\n  Minimum: [Getter],\n  MirrorPad: [Getter],\n  Mod: [Getter],\n  MomentumOptimizer: [Getter],\n  Multinomial: [Getter],\n  Multiply: [Getter],\n  Neg: [Getter],\n  NonMaxSuppressionV3: [Getter],\n  NonMaxSuppressionV4: [Getter],\n  NonMaxSuppressionV5: [Getter],\n  NotEqual: [Getter],\n  OP_SCOPE_SUFFIX: [Getter],\n  OneHot: [Getter],\n  OnesLike: [Getter],\n  Optimizer: [Getter],\n  OptimizerConstructors: [Getter],\n  Pack: [Getter],\n  PadV2: [Getter],\n  Pool: [Getter],\n  Pow: [Getter],\n  Prelu: [Getter],\n  Prod: [Getter],\n  RMSPropOptimizer: [Getter],\n  Range: [Getter],\n  Real: [Getter],\n  RealDiv: [Getter],\n  Reciprocal: [Getter],\n  Relu: [Getter],\n  Relu6: [Getter],\n  Reshape: [Getter],\n  ResizeBilinear: [Getter],\n  ResizeBilinearGrad: [Getter],\n  ResizeNearestNeighbor: [Getter],\n  ResizeNearestNeighborGrad: [Getter],\n  Reverse: [Getter],\n  RotateWithOffset: [Getter],\n  Round: [Getter],\n  Rsqrt: [Getter],\n  SGDOptimizer: [Getter],\n  ScatterNd: [Getter],\n  Select: [Getter],\n  Selu: [Getter],\n  Sigmoid: [Getter],\n  Sign: [Getter],\n  Sin: [Getter],\n  Sinh: [Getter],\n  Slice: [Getter],\n  Softmax: [Getter],\n  Softplus: [Getter],\n  SpaceToBatchND: [Getter],\n  SparseFillEmptyRows: [Getter],\n  SparseReshape: [Getter],\n  SparseSegmentMean: [Getter],\n  SparseSegmentSum: [Getter],\n  SparseToDense: [Getter],\n  SplitV: [Getter],\n  Sqrt: [Getter],\n  Square: [Getter],\n  SquaredDifference: [Getter],\n  Step: [Getter],\n  StridedSlice: [Getter],\n  StringNGrams: [Getter],\n  StringSplit: [Getter],\n  StringToHashBucketFast: [Getter],\n  Sub: [Getter],\n  Sum: [Getter],\n  Tan: [Getter],\n  Tanh: [Getter],\n  Tensor: [Getter],\n  TensorBuffer: [Getter],\n  Tile: [Getter],\n  TopK: [Getter],\n  Transform: [Getter],\n  Transpose: [Getter],\n  Unique: [Getter],\n  Unpack: [Getter],\n  UnsortedSegmentSum: [Getter],\n  Variable: [Getter],\n  ZerosLike: [Getter],\n  _FusedMatMul: [Getter],\n  abs: [Getter],\n  acos: [Getter],\n  acosh: [Getter],\n  add: [Getter],\n  addN: [Getter],\n  all: [Getter],\n  any: [Getter],\n  argMax: [Getter],\n  argMin: [Getter],\n  asin: [Getter],\n  asinh: [Getter],\n  atan: [Getter],\n  atan2: [Getter],\n  atanh: [Getter],\n  avgPool: [Getter],\n  avgPool3d: [Getter],\n  backend: [Getter],\n  backend_util: [Getter],\n  basicLSTMCell: [Getter],\n  batchNorm: [Getter],\n  batchNorm2d: [Getter],\n  batchNorm3d: [Getter],\n  batchNorm4d: [Getter],\n  batchToSpaceND: [Getter],\n  bincount: [Getter],\n  booleanMaskAsync: [Getter],\n  broadcastArgs: [Getter],\n  broadcastTo: [Getter],\n  browser: [Getter],\n  buffer: [Getter],\n  cast: [Getter],\n  ceil: [Getter],\n  clipByValue: [Getter],\n  clone: [Getter],\n  complex: [Getter],\n  concat: [Getter],\n  concat1d: [Getter],\n  concat2d: [Getter],\n  concat3d: [Getter],\n  concat4d: [Getter],\n  conv1d: [Getter],\n  conv2d: [Getter],\n  conv2dTranspose: [Getter],\n  conv3d: [Getter],\n  conv3dTranspose: [Getter],\n  copyRegisteredKernels: [Getter],\n  cos: [Getter],\n  cosh: [Getter],\n  cosineWindow: [Getter],\n  cumsum: [Getter],\n  customGrad: [Getter],\n  denseBincount: [Getter],\n  deprecationWarn: [Getter],\n  depthToSpace: [Getter],\n  depthwiseConv2d: [Getter],\n  device_util: [Getter],\n  diag: [Getter],\n  dilation2d: [Getter],\n  disableDeprecationWarnings: [Getter],\n  dispose: [Getter],\n  disposeVariables: [Getter],\n  div: [Getter],\n  divNoNan: [Getter],\n  dot: [Getter],\n  dropout: [Getter],\n  einsum: [Getter],\n  elu: [Getter],\n  enableDebugMode: [Getter],\n  enableProdMode: [Getter],\n  enclosingPowerOfTwo: [Getter],\n  engine: [Getter],\n  env: [Getter],\n  equal: [Getter],\n  erf: [Getter],\n  exp: [Getter],\n  expandDims: [Getter],\n  expm1: [Getter],\n  eye: [Getter],\n  fft: [Getter],\n  fill: [Getter],\n  findBackend: [Getter],\n  findBackendFactory: [Getter],\n  floor: [Getter],\n  floorDiv: [Getter],\n  fused: [Getter],\n  gather: [Getter],\n  gatherND: [Getter],\n  gather_util: [Getter],\n  getBackend: [Getter],\n  getGradient: [Getter],\n  getKernel: [Getter],\n  getKernelsForBackend: [Getter],\n  grad: [Getter],\n  grads: [Getter],\n  greater: [Getter],\n  greaterEqual: [Getter],\n  ifft: [Getter],\n  imag: [Getter],\n  image: [Getter],\n  inTopKAsync: [Getter],\n  io: [Getter],\n  irfft: [Getter],\n  isFinite: [Getter],\n  isInf: [Getter],\n  isNaN: [Getter],\n  keep: [Getter],\n  kernel_impls: [Getter],\n  leakyRelu: [Getter],\n  less: [Getter],\n  lessEqual: [Getter],\n  linalg: [Getter],\n  linspace: [Getter],\n  localResponseNormalization: [Getter],\n  log: [Getter],\n  log1p: [Getter],\n  logSigmoid: [Getter],\n  logSoftmax: [Getter],\n  logSumExp: [Getter],\n  logicalAnd: [Getter],\n  logicalNot: [Getter],\n  logicalOr: [Getter],\n  logicalXor: [Getter],\n  losses: [Getter],\n  matMul: [Getter],\n  math: [Getter],\n  max: [Getter],\n  maxPool: [Getter],\n  maxPool3d: [Getter],\n  maxPoolWithArgmax: [Getter],\n  maximum: [Getter],\n  mean: [Getter],\n  memory: [Getter],\n  meshgrid: [Getter],\n  min: [Getter],\n  minimum: [Getter],\n  mirrorPad: [Getter],\n  mod: [Getter],\n  moments: [Getter],\n  movingAverage: [Getter],\n  mul: [Getter],\n  multiRNNCell: [Getter],\n  multinomial: [Getter],\n  neg: [Getter],\n  nextFrame: [Getter],\n  norm: [Getter],\n  notEqual: [Getter],\n  oneHot: [Getter],\n  ones: [Getter],\n  onesLike: [Getter],\n  op: [Getter],\n  outerProduct: [Getter],\n  pad: [Getter],\n  pad1d: [Getter],\n  pad2d: [Getter],\n  pad3d: [Getter],\n  pad4d: [Getter],\n  pool: [Getter],\n  pow: [Getter],\n  prelu: [Getter],\n  print: [Getter],\n  prod: [Getter],\n  profile: [Getter],\n  rand: [Getter],\n  randomGamma: [Getter],\n  randomNormal: [Getter],\n  randomUniform: [Getter],\n  range: [Getter],\n  ready: [Getter],\n  real: [Getter],\n  reciprocal: [Getter],\n  registerBackend: [Getter],\n  registerGradient: [Getter],\n  registerKernel: [Getter],\n  relu: [Getter],\n  relu6: [Getter],\n  removeBackend: [Getter],\n  reshape: [Getter],\n  reverse: [Getter],\n  reverse1d: [Getter],\n  reverse2d: [Getter],\n  reverse3d: [Getter],\n  reverse4d: [Getter],\n  rfft: [Getter],\n  round: [Getter],\n  rsqrt: [Getter],\n  scalar: [Getter],\n  scatterND: [Getter],\n  scatter_util: [Getter],\n  selu: [Getter],\n  separableConv2d: [Getter],\n  serialization: [Getter],\n  setBackend: [Getter],\n  setPlatform: [Getter],\n  setdiff1dAsync: [Getter],\n  sigmoid: [Getter],\n  sign: [Getter],\n  signal: [Getter],\n  sin: [Getter],\n  sinh: [Getter],\n  slice: [Getter],\n  slice1d: [Getter],\n  slice2d: [Getter],\n  slice3d: [Getter],\n  slice4d: [Getter],\n  slice_util: [Getter],\n  softmax: [Getter],\n  softplus: [Getter],\n  spaceToBatchND: [Getter],\n  sparse: [Getter],\n  sparseToDense: [Getter],\n  spectral: [Getter],\n  split: [Getter],\n  sqrt: [Getter],\n  square: [Getter],\n  squaredDifference: [Getter],\n  squeeze: [Getter],\n  stack: [Getter],\n  step: [Getter],\n  stridedSlice: [Getter],\n  string: [Getter],\n  sub: [Getter],\n  sum: [Getter],\n  sumOutType: [Getter],\n  tan: [Getter],\n  tanh: [Getter],\n  tensor: [Getter],\n  tensor1d: [Getter],\n  tensor2d: [Getter],\n  tensor3d: [Getter],\n  tensor4d: [Getter],\n  tensor5d: [Getter],\n  tensor6d: [Getter],\n  tensor_util: [Getter],\n  test_util: [Getter],\n  tidy: [Getter],\n  tile: [Getter],\n  time: [Getter],\n  topk: [Getter],\n  train: [Getter],\n  transpose: [Getter],\n  truncatedNormal: [Getter],\n  unique: [Getter],\n  unregisterGradient: [Getter],\n  unregisterKernel: [Getter],\n  unsortedSegmentSum: [Getter],\n  unstack: [Getter],\n  upcastType: [Getter],\n  util: [Getter],\n  valueAndGrad: [Getter],\n  valueAndGrads: [Getter],\n  variable: [Getter],\n  variableGrads: [Getter],\n  version_core: [Getter],\n  where: [Getter],\n  whereAsync: [Getter],\n  zeros: [Getter],\n  zerosLike: [Getter],\n  Callback: [Getter],\n  CallbackList: [Getter],\n  CustomCallback: [Getter],\n  EarlyStopping: [Getter],\n  History: [Getter],\n  InputSpec: [Getter],\n  LayerVariable: [Getter],\n  LayersModel: [Getter],\n  RNN: [Getter],\n  Sequential: [Getter],\n  SymbolicTensor: [Getter],\n  callbacks: [Getter],\n  constraints: [Getter],\n  initializers: [Getter],\n  input: [Getter],\n  layers: [Getter],\n  loadLayersModel: [Getter],\n  metrics: [Getter],\n  model: [Getter],\n  models: [Getter],\n  registerCallbackConstructor: [Getter],\n  regularizers: [Getter],\n  sequential: [Getter],\n  version_layers: [Getter],\n  GraphModel: [Getter],\n  deregisterOp: [Getter],\n  loadGraphModel: [Getter],\n  registerOp: [Getter],\n  version_converter: [Getter],\n  data: {\n    CSVDataset: [Function: CSVDataset],\n    Dataset: [Function: Dataset] { MAX_BUFFER_SIZE: 10000 },\n    FileDataSource: [Function: FileDataSource],\n    TextLineDataset: [Function: TextLineDataset],\n    URLDataSource: [Function: URLDataSource],\n    array: [Function: array],\n    csv: [Function: csv],\n    func: [Function: func],\n    generator: [Function: generator],\n    microphone: [Function: microphone],\n    version_data: '3.11.0',\n    webcam: [Function: webcam],\n    zip: [Function: zip]\n  },\n  version: {\n    'tfjs-core': '3.11.0',\n    'tfjs-backend-cpu': '3.11.0',\n    'tfjs-backend-webgl': '3.11.0',\n    'tfjs-data': '3.11.0',\n    'tfjs-layers': '3.11.0',\n    'tfjs-converter': '3.11.0',\n    tfjs: '3.11.0'\n  }\n}\n"
                         }
                     }
                 ],
                 "errors": [],
-                "height": 14717
+                "height": 291
             },
             {
                 "id": "a1b19160-3dd5-11ec-a86c-e5564a47a063",
@@ -89,7 +85,7 @@
                 "cellType": "code",
                 "cellScope": "global",
                 "code": "const dataForge = require('data-forge');\nrequire('data-forge-fs');\n\nlet df = await dataForge\n    .readFile(\"./train.csv\", { dynamicTyping: true })\n    .parseCSV()\n    \ndisplay(df.head(5)); // Preview first 5 rows.",
-                "lastEvaluationDate": "2021-11-14T10:44:30.549-08:00",
+                "lastEvaluationDate": "2021-11-14T18:31:58.895-08:00",
                 "output": [
                     {
                         "value": {
@@ -186,19 +182,19 @@
                     }
                 ],
                 "errors": [],
-                "height": 394
+                "height": 404
             },
             {
                 "id": "05e6ad10-44f6-11ec-af38-d345136c2295",
                 "cellType": "code",
                 "cellScope": "global",
-                "code": "\nconst dfParsed = df.parseInts(\"SibSp\").parseFloats([\"Fare\", \"Age\"])\nconst dfParsedTypes = dfParsed.detectTypes()\nconsole.log(dfParsedTypes.toString())\nconsole.log(dfParsed.head(5).toString())",
-                "lastEvaluationDate": "2021-11-14T10:44:30.713-08:00",
+                "code": "\nconst dfParsed = df.parseInts([\"SibSp\", \"Pclass\", \"Survived\", \"PassengerId\", \"Parch\"]).parseFloats([\"Fare\", \"Age\"])\nconst dfParsedTypes = dfParsed.detectTypes()\nconsole.log(dfParsedTypes.toString())\nconsole.log(dfParsed.head(5).toString())",
+                "lastEvaluationDate": "2021-11-14T18:31:58.895-08:00",
                 "output": [
                     {
                         "value": {
                             "displayType": "string",
-                            "data": "__index__  Type       Frequency           Column     \n---------  ---------  ------------------  -----------\n0          string     100                 PassengerId\n1          string     100                 Survived   \n2          string     100                 Pclass     \n3          string     100                 Name       \n4          string     100                 Sex        \n5          number     80.13468013468014   Age        \n6          undefined  19.865319865319865  Age        \n7          number     100                 SibSp      \n8          string     100                 Parch      \n9          string     100                 Ticket     \n10         number     100                 Fare       \n11         string     100                 Cabin      \n12         string     100                 Embarked   \n\n"
+                            "data": "__index__  Type       Frequency           Column     \n---------  ---------  ------------------  -----------\n0          number     100                 PassengerId\n1          number     100                 Survived   \n2          number     100                 Pclass     \n3          string     100                 Name       \n4          string     100                 Sex        \n5          number     80.13468013468014   Age        \n6          undefined  19.865319865319865  Age        \n7          number     100                 SibSp      \n8          number     100                 Parch      \n9          string     100                 Ticket     \n10         number     100                 Fare       \n11         string     100                 Cabin      \n12         string     100                 Embarked   \n\n"
                         }
                     },
                     {
@@ -210,14 +206,14 @@
                     }
                 ],
                 "errors": [],
-                "height": 555
+                "height": 526
             },
             {
                 "id": "02f96620-440f-11ec-9736-03256de06b4e",
                 "cellType": "code",
                 "cellScope": "global",
                 "code": "const dataCount = df.count()\nconsole.log(\"DataFrame Count:\", dataCount)\nconst summary = df.summarize()\nconsole.log(summary)\nconst dataTypes = df.detectTypes()\nconsole.log(dataTypes.toString())\nconst dataValues = df.detectValues()\nconsole.log(dataValues.toString())",
-                "lastEvaluationDate": "2021-11-14T10:44:30.713-08:00",
+                "lastEvaluationDate": "2021-11-14T18:31:58.895-08:00",
                 "output": [
                     {
                         "value": {
@@ -245,8 +241,12 @@
                         }
                     }
                 ],
-                "errors": [],
-                "height": 42783
+                "errors": [
+                    {
+                        "msg": "EAGAIN: resource temporarily unavailable, write"
+                    }
+                ],
+                "height": 1309
             },
             {
                 "id": "cdc31940-4415-11ec-9736-03256de06b4e",
@@ -261,7 +261,7 @@
                 "cellType": "code",
                 "cellScope": "global",
                 "code": "// Survived\nconst dataDistinctSurvivedImpute = df.distinct(row => row.Survived).deflate(row => row.Survived).toArray()\nconsole.log(\"Survived:\", dataDistinctSurvivedImpute, \"# of Survived\", dataDistinctSurvivedImpute.length)",
-                "lastEvaluationDate": "2021-11-14T10:44:30.713-08:00",
+                "lastEvaluationDate": "2021-11-14T18:31:35.456-08:00",
                 "output": [
                     {
                         "value": {
@@ -271,14 +271,14 @@
                     }
                 ],
                 "errors": [],
-                "height": 156
+                "height": 204
             },
             {
                 "id": "f105d1b0-4422-11ec-9c16-29b07fba06ee",
                 "cellType": "code",
                 "cellScope": "global",
                 "code": "// Pclass\nconst dataDistinctPclassImpute = df.distinct(row => row.Pclass).deflate(row => row.Pclass).toArray()\nconsole.log(\"Pclass:\", dataDistinctPclassImpute, \"# of Pclass's\", dataDistinctPclassImpute.length)",
-                "lastEvaluationDate": "2021-11-14T10:44:30.713-08:00",
+                "lastEvaluationDate": "2021-11-14T18:31:35.456-08:00",
                 "output": [
                     {
                         "value": {
@@ -288,14 +288,14 @@
                     }
                 ],
                 "errors": [],
-                "height": 156
+                "height": 204
             },
             {
                 "id": "7a513810-4423-11ec-9c16-29b07fba06ee",
                 "cellType": "code",
                 "cellScope": "global",
                 "code": "// Name\nconst dataDistinctNameImpute = df.distinct(row => row.Name).deflate(row => row.Name).toArray()\nconsole.log(\"Name:\", dataDistinctNameImpute, \"# of Name's\", dataDistinctNameImpute.length)",
-                "lastEvaluationDate": "2021-11-14T10:44:30.713-08:00",
+                "lastEvaluationDate": "2021-11-14T18:31:35.456-08:00",
                 "output": [
                     {
                         "value": {
@@ -305,14 +305,14 @@
                     }
                 ],
                 "errors": [],
-                "height": 1584
+                "height": 356
             },
             {
                 "id": "ba8b53c0-4423-11ec-9c16-29b07fba06ee",
                 "cellType": "code",
                 "cellScope": "global",
                 "code": "// Sex\nconst dataDistinctSexImpute = df.distinct(row => row.Sex).deflate(row => row.Sex).toArray()\nconsole.log(\"Sex:\", dataDistinctSexImpute, \"# of Sex\", dataDistinctSexImpute.length)",
-                "lastEvaluationDate": "2021-11-14T10:44:30.713-08:00",
+                "lastEvaluationDate": "2021-11-14T18:31:35.456-08:00",
                 "output": [
                     {
                         "value": {
@@ -322,14 +322,14 @@
                     }
                 ],
                 "errors": [],
-                "height": 156
+                "height": 204
             },
             {
                 "id": "e5a9fe30-4423-11ec-9c16-29b07fba06ee",
                 "cellType": "code",
                 "cellScope": "global",
                 "code": "// Age\nconst dataDistinctAgeImpute = df.deflate(row => row.Age).parseFloats()\n\nconsole.log(dataDistinctAgeImpute.average().toString())\n\nconst dataDistinctAgeImputeValues = dataDistinctAgeImpute.filter(age => age != \"\").average().toString()\n\nconsole.log(dataDistinctAgeImputeValues)\n\nconst dataDistinctAgeImputeEmptys = dataDistinctAgeImpute.filter(age => age == \"\").toString()\n\ndisplay(dataDistinctAgeImpute)",
-                "lastEvaluationDate": "2021-11-14T10:44:30.713-08:00",
+                "lastEvaluationDate": "2021-11-14T18:31:35.456-08:00",
                 "output": [
                     {
                         "value": {
@@ -1066,14 +1066,14 @@
                     }
                 ],
                 "errors": [],
-                "height": 1542
+                "height": 639
             },
             {
                 "id": "0fcda6d0-4424-11ec-9c16-29b07fba06ee",
                 "cellType": "code",
                 "cellScope": "global",
                 "code": "// SibSp\nconst dataDistinctSibSpImpute = df.distinct(row => row.SibSp).deflate(row => row.SibSp).toArray()\nconsole.log(\"SibSp:\", dataDistinctSibSpImpute, \"# of SibSp\", dataDistinctSibSpImpute.length)",
-                "lastEvaluationDate": "2021-11-14T10:44:30.713-08:00",
+                "lastEvaluationDate": "2021-11-14T18:31:35.456-08:00",
                 "output": [
                     {
                         "value": {
@@ -1083,14 +1083,14 @@
                     }
                 ],
                 "errors": [],
-                "height": 212
+                "height": 260
             },
             {
                 "id": "56ccb350-4424-11ec-9c16-29b07fba06ee",
                 "cellType": "code",
                 "cellScope": "global",
                 "code": "// Parch\nconst dataDistinctParchImpute = df.distinct(row => row.Parch).deflate(row => row.Parch).toArray()\nconsole.log(\"Parch:\", dataDistinctParchImpute, \"# of Parch\", dataDistinctParchImpute.length)",
-                "lastEvaluationDate": "2021-11-14T10:44:30.713-08:00",
+                "lastEvaluationDate": "2021-11-14T18:31:35.456-08:00",
                 "output": [
                     {
                         "value": {
@@ -1100,14 +1100,14 @@
                     }
                 ],
                 "errors": [],
-                "height": 212
+                "height": 260
             },
             {
                 "id": "7cf78370-4424-11ec-9c16-29b07fba06ee",
                 "cellType": "code",
                 "cellScope": "global",
                 "code": "// Ticket\nconst dataDistinctTicketImpute = df.distinct(row => row.Ticket).deflate(row => row.Ticket).toArray()\nconsole.log(\"Ticket:\", dataDistinctTicketImpute, \"# of Ticket's\", dataDistinctTicketImpute.length)",
-                "lastEvaluationDate": "2021-11-14T10:44:30.713-08:00",
+                "lastEvaluationDate": "2021-11-14T18:31:35.456-08:00",
                 "output": [
                     {
                         "value": {
@@ -1117,14 +1117,14 @@
                     }
                 ],
                 "errors": [],
-                "height": 534
+                "height": 356
             },
             {
                 "id": "a307c6b0-4424-11ec-9c16-29b07fba06ee",
                 "cellType": "code",
                 "cellScope": "global",
                 "code": "// Fare\nconst dataDistinctFareImpute = df.distinct(row => row.Fare).deflate(row => row.Fare).toArray()\nconsole.log(\"Fare:\", dataDistinctFareImpute, \"# of Fare's\", dataDistinctFareImpute.length)",
-                "lastEvaluationDate": "2021-11-14T10:44:30.713-08:00",
+                "lastEvaluationDate": "2021-11-14T18:31:35.456-08:00",
                 "output": [
                     {
                         "value": {
@@ -1134,14 +1134,14 @@
                     }
                 ],
                 "errors": [],
-                "height": 422
+                "height": 356
             },
             {
                 "id": "bd956a00-4424-11ec-9c16-29b07fba06ee",
                 "cellType": "code",
                 "cellScope": "global",
                 "code": "// Cabin\nconst dataDistinctCabinImpute = df.distinct(row => row.Cabin).deflate(row => row.Cabin).toArray()\nconsole.log(\"Cabin:\", dataDistinctCabinImpute, \"# of Cabin's\", dataDistinctCabinImpute.length)",
-                "lastEvaluationDate": "2021-11-14T10:44:30.713-08:00",
+                "lastEvaluationDate": "2021-11-14T18:31:35.456-08:00",
                 "output": [
                     {
                         "value": {
@@ -1151,14 +1151,14 @@
                     }
                 ],
                 "errors": [],
-                "height": 572
+                "height": 356
             },
             {
                 "id": "ca6d5e90-4415-11ec-9736-03256de06b4e",
                 "cellType": "code",
                 "cellScope": "global",
                 "code": "// Embarked\nconst dataDistinctEmbarkedImpute = df.distinct(row => row.Embarked).deflate(row => row.Embarked).toArray()\nconsole.log(\"Embarked:\", dataDistinctEmbarkedImpute, \"# of Embarked\", dataDistinctEmbarkedImpute.length)",
-                "lastEvaluationDate": "2021-11-14T10:44:30.713-08:00",
+                "lastEvaluationDate": "2021-11-14T18:31:35.456-08:00",
                 "output": [
                     {
                         "value": {
@@ -1175,24 +1175,701 @@
                 "id": "527aa6b0-4576-11ec-899d-efbc6f7a6af7",
                 "cellType": "code",
                 "cellScope": "global",
-                "code": "// set index\nconst df1 = df.setIndex(\"PassengerId\")\n// drop columns\nconst df2 = df1.dropSeries([\"Name\", \"Sex\", \"Age\", \"SibSp\", \"Parch\", \"Ticket\", \"Fare\", \"Cabin\", \"Embarked\"])\n// filter data\nconsole.log(df2.toArray())\n// convert to tensorflow format ?\n\n// run tensorflow",
-                "lastEvaluationDate": "2021-11-14T11:07:18.517-08:00",
+                "code": "// set index\nconst df1 = df.setIndex(\"PassengerId\")\n// drop columns\nconst df2 = df1.dropSeries([\"Name\", \"Sex\", \"Age\", \"SibSp\", \"Parch\", \"Ticket\", \"Fare\", \"Cabin\", \"Embarked\"])\n// filter data\nconsole.log(df2.toArray())\nconst df2Array = df2.toArray()\n\n// convert to tensorflow format ?",
+                "lastEvaluationDate": "2021-11-14T18:33:14.461-08:00",
+                "output": [
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "[\n  { PassengerId: '1', Survived: '0', Pclass: '3' },\n  { PassengerId: '2', Survived: '1', Pclass: '1' },\n  { PassengerId: '3', Survived: '1', Pclass: '3' },\n  { PassengerId: '4', Survived: '1', Pclass: '1' },\n  { PassengerId: '5', Survived: '0', Pclass: '3' },\n  { PassengerId: '6', Survived: '0', Pclass: '3' },\n  { PassengerId: '7', Survived: '0', Pclass: '1' },\n  { PassengerId: '8', Survived: '0', Pclass: '3' },\n  { PassengerId: '9', Survived: '1', Pclass: '3' },\n  { PassengerId: '10', Survived: '1', Pclass: '2' },\n  { PassengerId: '11', Survived: '1', Pclass: '3' },\n  { PassengerId: '12', Survived: '1', Pclass: '1' },\n  { PassengerId: '13', Survived: '0', Pclass: '3' },\n  { PassengerId: '14', Survived: '0', Pclass: '3' },\n  { PassengerId: '15', Survived: '0', Pclass: '3' },\n  { PassengerId: '16', Survived: '1', Pclass: '2' },\n  { PassengerId: '17', Survived: '0', Pclass: '3' },\n  { PassengerId: '18', Survived: '1', Pclass: '2' },\n  { PassengerId: '19', Survived: '0', Pclass: '3' },\n  { PassengerId: '20', Survived: '1', Pclass: '3' },\n  { PassengerId: '21', Survived: '0', Pclass: '2' },\n  { PassengerId: '22', Survived: '1', Pclass: '2' },\n  { PassengerId: '23', Survived: '1', Pclass: '3' },\n  { PassengerId: '24', Survived: '1', Pclass: '1' },\n  { PassengerId: '25', Survived: '0', Pclass: '3' },\n  { PassengerId: '26', Survived: '1', Pclass: '3' },\n  { PassengerId: '27', Survived: '0', Pclass: '3' },\n  { PassengerId: '28', Survived: '0', Pclass: '1' },\n  { PassengerId: '29', Survived: '1', Pclass: '3' },\n  { PassengerId: '30', Survived: '0', Pclass: '3' },\n  { PassengerId: '31', Survived: '0', Pclass: '1' },\n  { PassengerId: '32', Survived: '1', Pclass: '1' },\n  { PassengerId: '33', Survived: '1', Pclass: '3' },\n  { PassengerId: '34', Survived: '0', Pclass: '2' },\n  { PassengerId: '35', Survived: '0', Pclass: '1' },\n  { PassengerId: '36', Survived: '0', Pclass: '1' },\n  { PassengerId: '37', Survived: '1', Pclass: '3' },\n  { PassengerId: '38', Survived: '0', Pclass: '3' },\n  { PassengerId: '39', Survived: '0', Pclass: '3' },\n  { PassengerId: '40', Survived: '1', Pclass: '3' },\n  { PassengerId: '41', Survived: '0', Pclass: '3' },\n  { PassengerId: '42', Survived: '0', Pclass: '2' },\n  { PassengerId: '43', Survived: '0', Pclass: '3' },\n  { PassengerId: '44', Survived: '1', Pclass: '2' },\n  { PassengerId: '45', Survived: '1', Pclass: '3' },\n  { PassengerId: '46', Survived: '0', Pclass: '3' },\n  { PassengerId: '47', Survived: '0', Pclass: '3' },\n  { PassengerId: '48', Survived: '1', Pclass: '3' },\n  { PassengerId: '49', Survived: '0', Pclass: '3' },\n  { PassengerId: '50', Survived: '0', Pclass: '3' },\n  { PassengerId: '51', Survived: '0', Pclass: '3' },\n  { PassengerId: '52', Survived: '0', Pclass: '3' },\n  { PassengerId: '53', Survived: '1', Pclass: '1' },\n  { PassengerId: '54', Survived: '1', Pclass: '2' },\n  { PassengerId: '55', Survived: '0', Pclass: '1' },\n  { PassengerId: '56', Survived: '1', Pclass: '1' },\n  { PassengerId: '57', Survived: '1', Pclass: '2' },\n  { PassengerId: '58', Survived: '0', Pclass: '3' },\n  { PassengerId: '59', Survived: '1', Pclass: '2' },\n  { PassengerId: '60', Survived: '0', Pclass: '3' },\n  { PassengerId: '61', Survived: '0', Pclass: '3' },\n  { PassengerId: '62', Survived: '1', Pclass: '1' },\n  { PassengerId: '63', Survived: '0', Pclass: '1' },\n  { PassengerId: '64', Survived: '0', Pclass: '3' },\n  { PassengerId: '65', Survived: '0', Pclass: '1' },\n  { PassengerId: '66', Survived: '1', Pclass: '3' },\n  { PassengerId: '67', Survived: '1', Pclass: '2' },\n  { PassengerId: '68', Survived: '0', Pclass: '3' },\n  { PassengerId: '69', Survived: '1', Pclass: '3' },\n  { PassengerId: '70', Survived: '0', Pclass: '3' },\n  { PassengerId: '71', Survived: '0', Pclass: '2' },\n  { PassengerId: '72', Survived: '0', Pclass: '3' },\n  { PassengerId: '73', Survived: '0', Pclass: '2' },\n  { PassengerId: '74', Survived: '0', Pclass: '3' },\n  { PassengerId: '75', Survived: '1', Pclass: '3' },\n  { PassengerId: '76', Survived: '0', Pclass: '3' },\n  { PassengerId: '77', Survived: '0', Pclass: '3' },\n  { PassengerId: '78', Survived: '0', Pclass: '3' },\n  { PassengerId: '79', Survived: '1', Pclass: '2' },\n  { PassengerId: '80', Survived: '1', Pclass: '3' },\n  { PassengerId: '81', Survived: '0', Pclass: '3' },\n  { PassengerId: '82', Survived: '1', Pclass: '3' },\n  { PassengerId: '83', Survived: '1', Pclass: '3' },\n  { PassengerId: '84', Survived: '0', Pclass: '1' },\n  { PassengerId: '85', Survived: '1', Pclass: '2' },\n  { PassengerId: '86', Survived: '1', Pclass: '3' },\n  { PassengerId: '87', Survived: '0', Pclass: '3' },\n  { PassengerId: '88', Survived: '0', Pclass: '3' },\n  { PassengerId: '89', Survived: '1', Pclass: '1' },\n  { PassengerId: '90', Survived: '0', Pclass: '3' },\n  { PassengerId: '91', Survived: '0', Pclass: '3' },\n  { PassengerId: '92', Survived: '0', Pclass: '3' },\n  { PassengerId: '93', Survived: '0', Pclass: '1' },\n  { PassengerId: '94', Survived: '0', Pclass: '3' },\n  { PassengerId: '95', Survived: '0', Pclass: '3' },\n  { PassengerId: '96', Survived: '0', Pclass: '3' },\n  { PassengerId: '97', Survived: '0', Pclass: '1' },\n  { PassengerId: '98', Survived: '1', Pclass: '1' },\n  { PassengerId: '99', Survived: '1', Pclass: '2' },\n  { PassengerId: '100', Survived: '0', Pclass: '2' },\n  ... 791 more items\n]\n"
+                        }
+                    }
+                ],
+                "errors": [],
+                "height": 451
+            },
+            {
+                "id": "32530160-459f-11ec-8874-3fea89722fcf",
+                "cellType": "markdown",
+                "code": "### Convert data to tensor flow",
+                "output": [],
+                "errors": [],
+                "height": 86
+            },
+            {
+                "id": "8649ffd0-458b-11ec-9500-53e0e836db78",
+                "cellType": "code",
+                "cellScope": "global",
+                "code": "function convertToTensor(data) {\n    return tf.tidy(() => {\n        // Step 1. Shuffle the data\n        tf.util.shuffle(data)\n\n        // Step 2. Convert data to Tensor\n        const inputs = data.map(d => d.Pclass)\n        const labels = data.map(d => d.Survived)\n\n        const inputTensor = tf.tensor2d(inputs, [inputs.length, 1], \"int32\")\n        const labelTensor = tf.tensor2d(labels, [labels.length, 1], \"int32\")\n\n        // Step 3. One-hot encode data?\n        return {\n            inputs: inputTensor,\n            labels: labelTensor\n        }\n    })\n}\n\nconst obj = convertToTensor(df2Array)\n\nlet inputs = obj.inputs\nlet labels = obj.labels\n\nconsole.log(inputs, labels)\n\ninputs.print()\nlabels.print()",
+                "lastEvaluationDate": "2021-11-14T18:34:43.749-08:00",
+                "output": [
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Tensor {\n  kept: false,\n  isDisposedInternal: false,\n  shape: [ 891, 1 ],\n  dtype: 'int32',\n  size: 891,\n  strides: [ 1 ],\n  dataId: {},\n  id: 2,\n  rankType: '2',\n  scopeId: 2\n} Tensor {\n  kept: false,\n  isDisposedInternal: false,\n  shape: [ 891, 1 ],\n  dtype: 'int32',\n  size: 891,\n  strides: [ 1 ],\n  dataId: {},\n  id: 3,\n  rankType: '2',\n  scopeId: 2\n}\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Tensor\n    [[3],\n     [1],\n     [1],\n     ...,\n     [1],\n     [3],\n     [3]]\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Tensor\n    [[0],\n     [0],\n     [1],\n     ...,\n     [1],\n     [0],\n     [0]]\n"
+                        }
+                    }
+                ],
+                "errors": [],
+                "height": 1119
+            },
+            {
+                "id": "f26a3a00-459e-11ec-8874-3fea89722fcf",
+                "cellType": "markdown",
+                "code": "### Get Model",
+                "output": [],
+                "errors": [],
+                "height": 48
+            },
+            {
+                "id": "a987c780-459e-11ec-8874-3fea89722fcf",
+                "cellType": "code",
+                "cellScope": "global",
+                "code": "function get_model() {\n    const model = tf.sequential();\n    model.add(tf.layers.dense({ inputShape: [1], units: 124, activation: 'relu', kernelInitializer: 'leCunNormal' }));\n    model.add(tf.layers.dense({ units: 32, activation: 'relu' }));\n    model.add(tf.layers.dense({ units: 1, activation: \"sigmoid\" }))\n    model.summary();\n    return model\n}\n\nconst modelInput = await get_model()",
+                "lastEvaluationDate": "2021-11-14T18:59:11.668-08:00",
+                "output": [
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "_________________________________________________________________\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Layer (type)                 Output shape              Param #   \n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "=================================================================\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "dense_Dense4 (Dense)         [null,124]                248       \n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "_________________________________________________________________\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "dense_Dense5 (Dense)         [null,32]                 4000      \n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "_________________________________________________________________\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "dense_Dense6 (Dense)         [null,1]                  33        \n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "=================================================================\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Total params: 4281\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Trainable params: 4281\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Non-trainable params: 0\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "_________________________________________________________________\n"
+                        }
+                    }
+                ],
+                "errors": [],
+                "height": 987
+            },
+            {
+                "id": "daff3370-459e-11ec-8874-3fea89722fcf",
+                "cellType": "markdown",
+                "code": "### Train Model",
+                "output": [],
+                "errors": [],
+                "height": 65
+            },
+            {
+                "id": "93310860-45a4-11ec-8874-3fea89722fcf",
+                "cellType": "code",
+                "cellScope": "global",
+                "code": "const predictions = 0\n\nasync function train(Xtrain, ytrain, model) {\n    \n    model.compile({\n        optimizer: \"rmsprop\",\n        loss: 'binaryCrossentropy',\n        metrics: ['accuracy'],\n    });\n\n    console.log(\"Training started....\")\n    await model.fit(Xtrain, ytrain, {\n        batchSize: 32,\n        epochs: 15,\n        validationSplit: 0.2,\n        callbacks: {\n            onEpochEnd: async (epoch, logs) => {\n                console.log(`EPOCH (${epoch + 1}): Train Accuracy: ${(logs.acc * 100).toFixed(2)},\n                                                     Val Accuracy:  ${(logs.val_acc * 100).toFixed(2)}\\n`);\n\n                console.log(logs)\n                console.log(epoch)\n            }\n        }\n    });\n    \n    await model.predict(tf.tensor2d([1], [1, 1])).print()\n\n    return model\n};\n\nconst modelOutput = train(inputs, labels, modelInput)\n// console.log(inputs)",
+                "lastEvaluationDate": "2021-11-14T19:37:05.576-08:00",
+                "output": [
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Training started....\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Epoch 1 / 15\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "1609ms 2260us/step - acc=0.667 loss=0.625 val_acc=0.704 val_loss=0.575 \n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "EPOCH (1): Train Accuracy: 66.71,\n                                                     Val Accuracy:  70.39\n\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "{\n  val_loss: 0.5747461318969727,\n  val_acc: 0.7039105892181396,\n  loss: 0.6245461702346802,\n  acc: 0.6671348214149475\n}\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "0\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Epoch 2 / 15\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "1706ms 2396us/step - acc=0.680 loss=0.619 val_acc=0.704 val_loss=0.575 \n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "EPOCH (2): Train Accuracy: 67.98,\n                                                     Val Accuracy:  70.39\n\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "{\n  val_loss: 0.5751376152038574,\n  val_acc: 0.7039105892181396,\n  loss: 0.6192644834518433,\n  acc: 0.6797752976417542\n}\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "1\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Epoch 3 / 15\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "1730ms 2429us/step - acc=0.677 loss=0.619 val_acc=0.704 val_loss=0.609 \n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "EPOCH (3): Train Accuracy: 67.70,\n                                                     Val Accuracy:  70.39\n\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "{\n  val_loss: 0.6085519790649414,\n  val_acc: 0.7039105892181396,\n  loss: 0.6186783909797668,\n  acc: 0.6769663095474243\n}\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "2\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Epoch 4 / 15\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "1746ms 2452us/step - acc=0.659 loss=0.625 val_acc=0.704 val_loss=0.575 \n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "EPOCH (4): Train Accuracy: 65.87,\n                                                     Val Accuracy:  70.39\n\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "{\n  val_loss: 0.574784517288208,\n  val_acc: 0.7039105892181396,\n  loss: 0.6252080798149109,\n  acc: 0.658707857131958\n}\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "3\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Epoch 5 / 15\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "1872ms 2630us/step - acc=0.671 loss=0.618 val_acc=0.704 val_loss=0.605 \n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "EPOCH (5): Train Accuracy: 67.13,\n                                                     Val Accuracy:  70.39\n\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "{\n  val_loss: 0.6046950817108154,\n  val_acc: 0.7039105892181396,\n  loss: 0.6179181933403015,\n  acc: 0.6713483333587646\n}\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "4\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Epoch 6 / 15\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "1812ms 2545us/step - acc=0.669 loss=0.623 val_acc=0.704 val_loss=0.575 \n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "EPOCH (6): Train Accuracy: 66.85,\n                                                     Val Accuracy:  70.39\n\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "{\n  val_loss: 0.5745600461959839,\n  val_acc: 0.7039105892181396,\n  loss: 0.6228247880935669,\n  acc: 0.6685393452644348\n}\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "5\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Epoch 7 / 15\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "1616ms 2270us/step - acc=0.677 loss=0.621 val_acc=0.670 val_loss=0.618 \n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "EPOCH (7): Train Accuracy: 67.70,\n                                                     Val Accuracy:  67.04\n\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "{\n  val_loss: 0.6184953451156616,\n  val_acc: 0.6703910827636719,\n  loss: 0.6208106279373169,\n  acc: 0.6769663095474243\n}\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "6\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Epoch 8 / 15\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "1923ms 2701us/step - acc=0.670 loss=0.618 val_acc=0.704 val_loss=0.587 \n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "EPOCH (8): Train Accuracy: 66.99,\n                                                     Val Accuracy:  70.39\n\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "{\n  val_loss: 0.5873166918754578,\n  val_acc: 0.7039105892181396,\n  loss: 0.6183754205703735,\n  acc: 0.6699438095092773\n}\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "7\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Epoch 9 / 15\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "1804ms 2534us/step - acc=0.664 loss=0.622 val_acc=0.704 val_loss=0.598 \n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "EPOCH (9): Train Accuracy: 66.43,\n                                                     Val Accuracy:  70.39\n\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "{\n  val_loss: 0.5981751084327698,\n  val_acc: 0.7039105892181396,\n  loss: 0.6222984194755554,\n  acc: 0.6643258333206177\n}\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "8\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Epoch 10 / 15\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "1897ms 2664us/step - acc=0.669 loss=0.618 val_acc=0.670 val_loss=0.662 \n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "EPOCH (10): Train Accuracy: 66.85,\n                                                     Val Accuracy:  67.04\n\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "{\n  val_loss: 0.6617158651351929,\n  val_acc: 0.6703910827636719,\n  loss: 0.6184069514274597,\n  acc: 0.6685393452644348\n}\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "9\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Epoch 11 / 15\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "1809ms 2541us/step - acc=0.669 loss=0.622 val_acc=0.704 val_loss=0.575 \n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "EPOCH (11): Train Accuracy: 66.85,\n                                                     Val Accuracy:  70.39\n\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "{\n  val_loss: 0.5750564336776733,\n  val_acc: 0.7039105892181396,\n  loss: 0.6215406060218811,\n  acc: 0.6685393452644348\n}\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "10\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Epoch 12 / 15\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "1831ms 2572us/step - acc=0.659 loss=0.627 val_acc=0.704 val_loss=0.577 \n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "EPOCH (12): Train Accuracy: 65.87,\n                                                     Val Accuracy:  70.39\n\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "{\n  val_loss: 0.576572597026825,\n  val_acc: 0.7039105892181396,\n  loss: 0.6268026828765869,\n  acc: 0.658707857131958\n}\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "11\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Epoch 13 / 15\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "1860ms 2612us/step - acc=0.670 loss=0.617 val_acc=0.704 val_loss=0.582 \n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "EPOCH (13): Train Accuracy: 66.99,\n                                                     Val Accuracy:  70.39\n\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "{\n  val_loss: 0.5819374322891235,\n  val_acc: 0.7039105892181396,\n  loss: 0.6170783638954163,\n  acc: 0.6699438095092773\n}\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "12\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Epoch 14 / 15\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "1902ms 2671us/step - acc=0.669 loss=0.624 val_acc=0.704 val_loss=0.582 \n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "EPOCH (14): Train Accuracy: 66.85,\n                                                     Val Accuracy:  70.39\n\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "{\n  val_loss: 0.5816913843154907,\n  val_acc: 0.7039105892181396,\n  loss: 0.6239149570465088,\n  acc: 0.6685393452644348\n}\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "13\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Epoch 15 / 15\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "1919ms 2695us/step - acc=0.674 loss=0.621 val_acc=0.704 val_loss=0.579 \n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "EPOCH (15): Train Accuracy: 67.42,\n                                                     Val Accuracy:  70.39\n\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "{\n  val_loss: 0.5786135196685791,\n  val_acc: 0.7039105892181396,\n  loss: 0.6207690238952637,\n  acc: 0.6741573214530945\n}\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "14\n"
+                        }
+                    },
+                    {
+                        "value": {
+                            "displayType": "string",
+                            "data": "Tensor\n     [[0.6361489],]\n"
+                        }
+                    }
+                ],
+                "errors": [
+                    {
+                        "msg": "\n"
+                    },
+                    {
+                        "msg": "\n"
+                    },
+                    {
+                        "msg": "\n"
+                    },
+                    {
+                        "msg": "\n"
+                    },
+                    {
+                        "msg": "\n"
+                    },
+                    {
+                        "msg": "\n"
+                    },
+                    {
+                        "msg": "\n"
+                    },
+                    {
+                        "msg": "\n"
+                    },
+                    {
+                        "msg": "\n"
+                    },
+                    {
+                        "msg": "\n"
+                    },
+                    {
+                        "msg": "\n"
+                    },
+                    {
+                        "msg": "\n"
+                    },
+                    {
+                        "msg": "\n"
+                    },
+                    {
+                        "msg": "\n"
+                    },
+                    {
+                        "msg": "\n"
+                    }
+                ],
+                "height": 6753
+            },
+            {
+                "id": "8f6ea300-45c1-11ec-8874-3fea89722fcf",
+                "cellType": "code",
+                "cellScope": "global",
+                "code": "// modelOutput.predict(tf.tensor2d([0], [1,1])).print()\n\n\n// console.log(modelOutput)\n\n(async function pred() { \n    await modelOutput.predict(tf.tensor2d([1], [1, 1])).print()\n})()",
+                "lastEvaluationDate": "2021-11-14T19:35:56.057-08:00",
                 "output": [],
                 "errors": [
                     {
-                        "msg": "df is not defined\r\nat Code cell, line 2"
+                        "msg": "modelOutput.predict is not a function\r\nat pred, line 7\nat Code cell, line 6"
                     }
                 ],
-                "height": 298
+                "height": 488
             },
             {
-                "id": "6fe7bf10-457d-11ec-bead-39a9f667b275",
-                "cellType": "code",
-                "cellScope": "global",
-                "code": "const model = tf.sequential({\n    layers: [\n        tf.layers.dense({ inputShape: [784], units: 32, activation: 'relu' }),\n        tf.layers.dense({ units: 10, activation: 'softmax' }),\n    ]\n});\n\nmodel.compile({\n    optimizer: 'sgd',\n    loss: 'categoricalCrossentropy',\n    metrics: ['accuracy']\n});\n\nconst data = tf.randomNormal([100, 784]);\nconst labels = tf.randomUniform([100, 10]);\n\nfunction onBatchEnd(batch, logs) {\n    console.log('Accuracy', logs.acc);\n}\n\nconst surface = { name: 'show.fitCallbacks', tab: 'Training' };\n// Train for 5 epochs with batch size of 32.\nawait model.fit(data, labels, {\n    epochs: 5,\n    batchSize: 32,\n    callbacks: tfvis.show.fitCallbacks(surface, ['loss', 'acc']),\n});",
+                "id": "64218e00-459f-11ec-8874-3fea89722fcf",
+                "cellType": "markdown",
+                "code": "### Call \"get_model\" and \"Train Model\"",
                 "output": [],
                 "errors": [],
-                "height": 565
+                "height": 65
             },
             {
                 "id": "da001690-3dd5-11ec-a86c-e5564a47a063",
@@ -1215,7 +1892,7 @@
                 "cellType": "code",
                 "cellScope": "global",
                 "code": "let transformed = df.select(row => { // Transform data.\n    const clone = Object.assign({}, row);\n    clone[\"Height (cm)\"] = clone[\"Height (in)\"] * 2.54;\n    return clone;\n});\n\nawait df.asCSV().writeFile(\"./transformed.csv\"); // Save CSV file.",
-                "lastEvaluationDate": "2021-11-14T10:44:30.713-08:00",
+                "lastEvaluationDate": "2021-11-14T14:50:25.423-08:00",
                 "output": [],
                 "errors": [],
                 "height": 185
